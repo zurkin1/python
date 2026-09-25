@@ -1,0 +1,15 @@
+{
+  "applets": [{
+    "lastAccessTime": "2026-09-21T16:16:12.533524Z",
+    "firstAccessTime": "2026-09-17T18:05:47.202988Z",
+    "source": {
+      "sourceType": "SPANNER",
+      "spanner": {
+        "id": "b6c57f61-2409-457c-bb69-00b92d837545"
+      }
+    },
+    "name": "Hebrew Reader",
+    "description": "Paste Hebrew text and listen to it read aloud clearly with natural speech, playback controls, and speed adjustments.",
+    "runtimeType": 1
+  }]
+}
