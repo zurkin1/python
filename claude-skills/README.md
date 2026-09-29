@@ -23,6 +23,7 @@ cp -r ~/.claude/skills/md-fixup claude-skills/
 cp -r ~/.claude/skills/txt-to-epub claude-skills/
 cp -r ~/.claude/skills/txt-to-md claude-skills/
 cp -r ~/.claude/skills/pdf-rtl-page-direction claude-skills/
+cp -r ~/.claude/skills/pdf-split-spreads claude-skills/
 git add claude-skills && git commit -m "Update skills" && git push
 ```
 
@@ -37,3 +38,4 @@ Then on the other machine: `git pull` and copy again.
 - **txt-to-epub** — convert a plain-text/markdown/docx/pdf book into a clean EPUB with chapter structure and RTL support.
 - **txt-to-md** — convert a markdown book specifically into a clean EPUB (chapters, metadata, images, RTL). Despite the name, input must already be `.md` — use txt-to-epub for other source formats.
 - **pdf-rtl-page-direction** — fix a PDF whose two-page/spread view shows pages in the wrong order (missing `ViewerPreferences/Direction` = `/R2L`) for a Hebrew/Arabic book.
+- **pdf-split-spreads** — split a scanned PDF of two-page spreads into single pages, cutting in each page's blank gutter (not the fixed middle), RTL order by default.
