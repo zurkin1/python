@@ -1,0 +1,667 @@
+% [original page: 52]
+\noindent\textbf{\underline{הוכחה.}}
+
+\medskip
+\noindent\textbf{I.} לקונגרואנציה
+\[ z^2 \equiv D \equiv 0 \pmod{4} \]
+ישנם בדיוק \underline{שני שרשים}, והם:
+\[ z_1 = 0 \, , \quad z_2 = 2 \]
+כי
+\[ 2 \equiv -2 \pmod{4} \]
+
+\noindent\textbf{II.} לקונגרואנציה
+\[ z^2 \equiv D \equiv 0 \pmod{a} \]
+ישנו \underline{שורש אחד ויחיד} $z_1 = 0$ בתנאים ב', ה'.
+
+\noindent\textbf{III.} לקונגרואנציה
+\[ z^2 \equiv D \pmod{p^{\alpha}} \]
+ישנם בדיוק שני שרשים, כפי שכבר קבענו בסעיף הקודם. מכאן אנו מסיקים, על סמך משפט 2, שמספר שרשי הקונגרואנציה
+\[ z^2 \equiv D \pmod{4ap^{\alpha}} \]
+הוא בדיוק
+\[ 2 \cdot 1 \cdot 2 = 4 . \]
+\hfill מ.ש.ל.
+
+\bigskip
+\noindent\textbf{\underline{הערה 1.}}
+אם $z_1, z_2$ הם שני השרשים מבין השרשים הנ"ל, אזי:
+\[ z_3 = -z_1 \, , \qquad z_4 = -z_2 \]
+
+\bigskip
+\noindent\textbf{\underline{מסקנה 1.}}
+\[ 2a \mid z \]
+ואמנם מן הקונגרואנציה עצמה נובע כי:
+\[ 4a \mid z^2 \]
+ולכן $z$ הנו זוגי, ומאחר ש-$a$ אינו מכיל גורמים ריבועיים נובע מיד כי:
+\[ a \mid z \]
+ומכיוון ש-$a$ הוא לא-זוגי, לפי ההנחה, זה אומר:
+\[ 2a \mid z \tag{11} \]
+ועתה נוכל גם לקבוע את מספר שרשי הקונגרואנציה (4).
+
+% [original page: 53]
+כאמור
+\[ D \equiv 0 \pmod{4} \]
+$b$ הנו זוגי, כי:
+\[ b^2 - 4ac \equiv 0 \pmod{4} \]
+\[ \Rightarrow \quad b^2 \equiv 0 \pmod{4} \]
+\[ \Rightarrow \quad a \mid b . \]
+ומכיוון שלפי ההנחה $a \mid b$, אזי:
+\[ 2a \mid b . \tag{12} \]
+לפיכך בקונגרואנציה
+\[ 2ax + b \equiv Z \pmod{4am} \]
+או
+\[ 2ax \equiv Z - b \pmod{4am} \]
+מתקיים
+\[ 2a \mid Z - b \]
+ומכיוון שגם
+\[ (2a, 4am) = 2a \]
+הוה אומר: מספר השרשים היסודיים של הקונגרואנציה $2ax + b \equiv Z \pmod{4am}$ הוא בדיוק $2a$, כפי שנובע מתורת הקונגרואנציות ממעלה ראשונה.
+
+מאידך גיסא: מספר הערכים היסודיים בשביל $Z$ הוא, כפי שקבענו: $4$;
+מכאן אנו מקבלים את המסקנה הבאה:
+
+\bigskip
+\noindent\textbf{\underline{מסקנה 2.}}
+מספר שרשי הקונגרואנציה
+\[ ax^2 + bx + c \equiv 0 \pmod{p^{\alpha}} \]
+בתנאים:
+א) $a \mid b \; \wedge \; a \mid D$
+ב) $a$ = לא-זוגי
+ג) $p \neq 2$ ראשוני
+ד) $D \equiv 0 \pmod{4}$
+ה) $a$ אינו מכיל גורמים ריבועיים
+ו) $p \nmid D$
+
+הוא בדיוק $8a$.
+
+\bigskip
+\noindent\textbf{\underline{מסקנה 3.}}
+אם
+\[ m = p_1^{\alpha_1} p_2^{\alpha_2} \cdots p_k^{\alpha_k} \]
+
+% [original page: 54]
+אזי מספר שרשי הקונגרואנציה דלעיל בתנאים האמורים, הוא בדיוק:
+\[ 2^{k+1} a . \]
+
+בנכונות המסקנה האחרונה אפשר להיווכח; בהסתמכנו על משפט 2 ועל
+הממפט האחרון, ובשׂים לב לכך, שלקונגרואנציה
+\[ z^2 \equiv D \pmod{p^{\alpha}} \]
+ישנם בדיוק שני שרשים יסודיים. אולם דא עקא, כי כידוע יש לכל
+היוותרם שרשים יסודיים לקונגרואנציה.
+\[ f(x) \equiv 0 \pmod{p} \]
+% ILLEGIBLE: the function symbol before "(x)" is a stylized cursive f in the original, rendered here as f(x).
+במקום ש-$n$ הוא מעלת הפולינום $f(x)$, וזה סותר את המסקנות שקבלנו.
+
+הסתירה נובעת ממציאת ערך $x$ מתוך הקונגרואנציה
+\[ 2ax + b \equiv Z \pmod{4am} \]
+כפי שעשה גאום.
+
+כי לפי זה אנו מקבלים ערכים בשביל $x$ אשר אינם קונגרואנטיים,
+אמנם, לפי $4am$, אבל הם קונגרואנטיים לפי $m$.
+אעפ"כ ישנה חשיבות רבה לקביעת העובדה עצמה בהכללת במסקנה הבאה:
+
+\bigskip
+\noindent\textbf{\underline{מסקנה 4.}}
+בקונגרואנציות דו-צדדיות $(a \mid b)$ יש פתרון לקונגרואנציה המלאה
+\[ ax^2 + bx + c \equiv 0 \pmod{m} \]
+בשביל כל אחד משרשי הקונגרואנציה
+\[ z^2 \equiv D \pmod{4am} \]
+עפ"י הקונגרואנציה
+\[ 2ax + b \equiv Z \pmod{4am} \]
+מאחר שקיים אז תמיד
+\[ 2a \mid Z - b \]
+
+משא"כ בקונגרואנציות בדרך כלל.
+
+3. בקונגרואנציות בדרך כלל אנו מקבלים לפי שיטת גאום
+
+% [original page: 55]
+\[
+\left\{
+\begin{aligned}
+z^2 &\equiv D \pmod{4am} \\
+2ax + b &\equiv Z \pmod{4am}
+\end{aligned}
+\right.
+\]
+
+לפיכך אם
+\[ z_1^2 \equiv D \pmod{4am} \]
+\[ \Rightarrow \quad (-z_1)^2 \equiv D \pmod{4am} \]
+נקבל את
+
+\bigskip
+\noindent\textbf{\underline{משפט 5.}}
+אם קיים $x$ המקיים
+\[ 2ax + b \equiv z_1 \pmod{4am} \]
+אינו יכול להתקיים בשביל $x$ אחר
+\[ 2ax' + b = -z_1 \pmod{4am} . \]
+כי כפי שראינו, נובע מקיום שתי הקונגרואנציות האלה
+\[ 2a \mid b \]
+כלומר - הקונגרואנציה היא דו-צדדית וקיים
+\[ D \equiv 0 \pmod{4} \]
+
+4. מכל ההערות הנ"ל אנו באים לידי החלטה, שאת פתרון הקונגרואנציה ממעלה שנייה
+\[ ax^2 + bx + c \equiv 0 \pmod{m} \]
+יש לבצע עפ"י שתי הקונגרואנציות
+\[ z^2 \equiv D \pmod{4am} \]
+\[ 2ax + b \equiv Z \pmod{m} \]
+
+ולא כפי שקבע גאום.
+עי"כ מתאפשר מאידך גיסא פתרון הקונגרואנציה
+\[ 2ax + b \equiv Z \pmod{m} \]
+בשביל
+\[ Z = z_1 \]
+וגם בשביל
+\[ Z = -z_1 \]
+אפילו כאשר
+\[ a \neq b \]
+
+% [original page: 56]
+ומאידך גיסא אין מקבלים שרשים במספר שרשים כאשר
+\[ (Z - b, 2a) = (Z - b, 4am) = \delta \]
+% NOTE: the source uses a distinct cursive symbol here (approximated as $\delta$) for this gcd-like quantity.
+אשר אינם באים בחשבון, למעשה, ככלא-קונגרואנטיים מודולו $m$.
+כי חלק מהם אמנם קונגרואנטיים מודולו $m$, אבל לא מודולו $4am$.
+וזהו התיקון לשיטת גאום.
+
+\bigskip
+\noindent\textbf{\underline{דוגמה.}}
+בפתרון הקונגרואנציה
+\[ 3x^2 + 2x + 2 \equiv 0 \pmod{7} \]
+אנו מקבלים
+\[ D = -20 \]
+\[ z^2 \equiv -20 \pmod{84} \]
+טמונת השרשים היסודיים הם:
+\[ z_1 = 8 \, , \; z_2 = -8 \]
+\[ z_3 = 20 \, , \; z_4 = -20 \]
+\[ z_5 = 50 \, , \; z_6 = -50 \]
+\[ z_7 = 22 \, , \; z_8 = -28 . \]
+לפי שיטתו של גאום עלינו להרבות במציאת כל הפתרונות
+\[ 6x + 2 \equiv z_i \pmod{84} \]
+\[ i = 1, 2, 3, \ldots, 8 \]
+בו בזמן, שידוע מראש, שאין לקונגרואנציה זאת \underline{יותר מנני} שרשים
+יסודיים.
+מאידך, קל להיווכח, שבשביל כל שמונת ערכי $Z$ דלעיל מתקיים
+\[ Z \equiv \pm 1 \pmod{7} \]
+ועלינו לפתור במקום זאת את שתי הקונגרואנציות
+\[ 6x + 2 \equiv 1 \pmod{7} \]
+\[ 6x + 2 \equiv -1 \pmod{7} \]
+\[ x_1 = 1 \, , \; x_2 = 3 \]
+ומכאן נקבל מיד
+
+ואלו הם השרשים היסודיים הקיימים בכלל.
+
+% [original page: 57]
+\section*{פרק ו'}
+
+\subsection*{הערות כלליות}
+
+פרק זה מהווה למעשה תורה שלמה בפני עצמה. הבעייה המרכזית העו־מדת לדיון בפרק זה היא - מטרתה סניכרים בכל תורת המספרים בכלל ובתורת התבניות הריבועיות בפרט.
+% ILLEGIBLE: phrase "מטרתה סניכרים" uncertain due to typewriter font ambiguity.
+
+לפי צורתה אין הבעייה שונה במאומה מתורת התבניות הריבועיות בכלל; אולם שונה היא תכלית שינוי סינורי כבר בזה שעצם חקירתה יוצאת ממישטח של האריתמטיקה ונכנסת לתחום האנליזה.
+
+וכך קרה גם עם הבעייה הזאת מבחינה היסטורית: המתימטיקאים הראשונים שנתקלו בה מסרוה לאנשי האנליזה האנגלרים על מנת לחקרה. אולם אם אפילו נעזוב את המומנט האנליטי שבדבר, יש בבעייה זאת משהו מיוחד במינו שאין למצאו בתבנית ריבועית רגילה. יופי מיוחד מתגלה בנוסחאות המבטאות את כל פתרונות משוואת פל.
+
+אם מותר להגיד שאת המקום המרכזי של תורת המספרים בכלל תופסת תורת התבניות הרי שאת המקום המרכזי של תורת התבניות תופסת התורה על משוואת פל.
+
+כפי שיתברר עוד, אין לדבר כאן על משוואה דיופנטית מסויימת, שאפילו אם היא מעניינם אין ליחס לה חשיבות רבה מבחינה מדעית, אם כי תורת המספרים כולה משמשת לעת-עתה רק מזון רוחני לרעבים אסתטיים.
+
+בבעייה הנוגעת למשוואת פל יש לראות שדה חקירה רחב של אותן התבניות המייצגות את היחידה בכל שדה אלגברי בכלל ובתורת המספרים הרצוינגלרים בפרט.
+
+דיריכלה ניסה לפתח את התורה הזאת ביחס לתבניות ממעלה שלישית, אולם לאחר שמצא, כנראה, ששדה המספרים האלגבראיים הוא כר נרחב יותר למטרה זאת, עזב את משוואת פל וריכז את כל הפרק הידוע על היחידות בשדה אלגברי כלשהו.
+
+% [original page: 58]
+\subsection*{הקדמה}
+
+\noindent\textbf{1.} בשם משוואת פל-פרמה אנו קוראים למשוואה הדיופנטית מאחת הצורות
+\[ u^2 - Dv^2 = \pm 1 \, , \; \pm 4 \]
+בשביל $D$ שלם כלשהו, אשר אינו ריבוע שלם.
+
+משוואה זאת תופסת מקום מרכזי בהרבה בעיות ממשח תורת המספרים, וביחוד בתורת התבניות ובתורת היחידות בשדה ריבועי כלשהו.
+
+כבר גאוס עורר ויכוח מסביב לשאלת הזכויות לגילוי התורה הזאת. כפי שגאוס כותב, הציע הצרפתי פרמה את הבעייה לפני בעלי האנליזה האנגלרים וכפותר המשוואה נזכר ברונקר,
+
+\medskip
+\noindent\LR{Algebra Kapitel 98, Opera, T. II p. 418.}
+
+\medskip
+אחרים מזכירים את שמו של פרמה עצמו כמגלה התורה הנוגעת לבעייה זאת. אולם אוילר מביא את שמו של האנגלי פל, ולפיכך נקראה המשוואה הזאת בפי רבים מהמתימטיקאים עד היום הזה בשם "משוואת פל".
+
+\medskip
+\noindent\LR{Euler, Comm. Petr. VI. p. 175,}
+
+\noindent\LR{Comm. nov. XI, p. 28,}
+
+\noindent\LR{Algebra Pars II. p. 226,}
+
+\noindent\LR{Opusc. An. I. p. 310.}
+
+\medskip
+גאוס בעצמו מטפל בבעייה הנ"ל כבמקרה פרטי של המשוואה:
+\[ u^2 - Dv^2 = m^2 \]
+בשביל $m$ כלשהו.
+
+\medskip
+\noindent\LR{Gauss, D.A. art. 198--201.}
+
+\medskip
+בכל הסיסות שעד אז מופיע אז המומנט האנליטי לקביעת עצם מציאותו של פתרון המשוואה בכל המקרים, בלי יוצא מן הכלל, מן הראוי, איפוא, לתת הוכחה אריתמטית טהורה לעובדה זאת.
+
+לובלסקי עשה אמנם את הדבר
+
+\noindent\LR{S. Lubelski,}
+
+% [original page: 59]
+\noindent\LR{"Zur Gaussschen Kompositionstheorie der binären quadr. Formen", \quad J. f. M. 176.}
+
+\medskip
+אולם הוא מסתמך על משפט של גאוס מתורת התבניות הדו-צדדיות, שעוד נשוב אליו בפרק המיוחד לכך. לעומת זאת נראה מאפשר להוכיח בדרך אריתמטית טהורה את מציאות פתרון משוואת פל-פרמה מבלי להיכנס לתורה הנ"ל.
+
+\medskip
+\noindent\textbf{2.} כמו כן יש ערך רב - ומבחינות מסויימות אפילו יותר - למשוואה מהצורה
+\[ ax^2 - by^2 = \pm 1 \, , \; \pm 2 \, , \; \pm 4 . \]
+
+כפי שכבר ראינו מצטמצמת בעיית פתירת תבנית ריבועית לפתרון תבנית היחידה וזאת האחרונה לפתירתה של משוואה מהצורה האחרונה, לאחר שנמצא טרנספורמציה המתאימה למסקנות הנכללות במשפט 1, פרק ד', §1, כאשר
+\[ D \equiv 0 \pmod{4} \]
+
+וכפי שנראה עוד באחד הפרקים המאוחרים בשביל כל $D$.
+
+חשיבות משנה יש לתורת המשוואות הנ"ל לקביעת מספר המחלקות של תבניות דו-צדדיות, כפי שיתברר באחד הפרקים המאוחרים. בשיטתנו אנו לפתירת התבניות הריבועיות משמשת המשוואה האחרונה לאבן יסוד לכל הבנין שהקמנו.
+
+המשוואה
+\[ Mx^2 - Ny^2 = 1, 2 \]
+נחקרה כבר ע"י לז'נדר.
+
+הוא קבע, שאם $(p,q)$ הנו הפתרון המינימלי של המשוואה
+\[ p^2 - Aq^2 = 1, 2 \]
+% ILLEGIBLE: this equation is cropped at the page's left margin in the original; reconstructed from context (Legendre's minimal solution of $p^2 - Aq^2 = 1,2$).
+אזי קיים קשר
+\[ fMx^2 - fNy^2 = 2 \]
+\[ MN = A . \]
+בשביל $f = 1$ או $2$
+
+\medskip
+\noindent דיריכלה
+
+\noindent\LR{G.L. Dirichlet, \quad Werke I, S.223}
+
+% [original page: 60]
+דוחה את הדרישה בדבר מינימליות הפתרון $(p,q)$.
+
+אולם השיטה של דיריכלה אינה ניתנת לשימוש במקרה ש-$A$ הוא מספר זוגי.
+חוץ מזה אינו מברר דיריכלה את המקרה
+\[ 2x^2 - By^2 = 1 \]
+וכפי שנראה ישנן קשיות רבות במסקנות המתקבלות במקרה מאלו הקיימות בדרך כלל.
+
+\medskip
+\noindent ד. הילברט
+
+\noindent\LR{D. Hilbert, \quad Göttinger Nachrichten, 1897 (Math. Klasse)}
+
+\begin{center}
+S. 52
+\end{center}
+
+מביא קריטריון ביחס למשוואה
+\[ mx^2 + ny^2 = 1 \]
+אשר אין לו כל משמעות מעשית, והוא:
+
+"כאשר $m, n$ הם מספרים רציונליים שלמים, אזי יש פתרון למשוואה הדיופנטית
+\[ mx^2 + ny^2 = 1 \]
+אז כאשר קיימת הקונגרואנציה
+\[ mx^2 + ny^2 \equiv 1 \pmod{p^e} \]
+לגבי כל מספר $p$ ראשוני ולגבי כל חזקה כלשהי של אותו מספר ראשוני". כמובן, שלקריטריון זה יש רק חשיבות תיאורטית.
+
+\medskip
+\noindent ובר ,
+
+\noindent\LR{H. Weber, \quad Math. Annalen Bd. 43 (1893) \quad S. 184--195}
+
+\medskip
+קבע נוסחאות זהותיות לפתרון המשוואה
+\[ Mx^2 - Ny^2 = 1 \]
+שאחדות מהן הן:
+\[ M = B^3 - 5B^2 + 8B - 5 \]
+\[ N = B^3 - 5B^2 + 4B - 1 \]
+ואז:
+
+% [original page: 61]
+\[ 2x = (B-1)(B^2 - 4B + 2)(B-4) \]
+\[ 2y = (B-3)(B^3 - 6B^2 + 10B - 6) \]
+
+בפתירת המשוואה הנ"ל במספרים רציונליים שלמים יש ערך לנוסחאות אלו רק, כאשר אפשר לבטא את המקדמים $M, N$ עפ"י הנוסחאות הקודמות.
+
+\medskip
+\noindent\textbf{3.} משוואת פל - פרמה ניתנת כאן להרחבה בכיוון אחד, והוא לגבי המעריכים עצמם. הכוונה כאן למשוואה מהצורה
+\[ ax^{2\mu} - by^{2\nu} = \pm 1 \, , \; \pm 2 \, , \; \pm 4 \]
+בשביל מספרים $\mu, \nu$ טבעיים כלשהם.
+
+להרחבה יש ערך רב עוד כבר מהסיבה הפשוטה שע"י כן אנו חודרים לתבניות מסדר גבוה, אמנם רק מסוג מסויימים.
+
+התורה הכללית על תבניות שנוניות מסדר גבוה אשר בעזרתן ניתן להצגה המספר 1 שייכת כבר לתורת המספרים האלגבראיים הכללית וביחוד לתורת היחידות שנחקרה ע"י דיריכלה.
+
+אולם במקרים המיוחדים הנ"ל אפשר לקבוע, כפי דנראה, משפטים מעניינים מאוד בפני עצמם באמצעים אלמנטריים לגמרי על סמך ההכללה של משוואת פל - פרמה האלמנטרית.
+
+\rule{4cm}{0.5pt}
+
+% [original page: 62]
+\subsection*{\S1. על משוואת פל-פרמה}
+
+\noindent\textbf{1. הוכחה אריתמטית למציאות פתרון משוואת פל.}
+
+על סמך המסקנות שקבלנו בפרקים הקודמים נגיע מיד בדרך אריתמטית טהורה בנכונות בנכונות המשפט הבא:
+
+\bigskip
+\noindent\textbf{\underline{משפט 1.}}
+למשוואה
+\[ u^2 - \triangle v^2 = 1 \]
+($\triangle$ אינו ריבוע שלם)
+יש תמיד פתרון במספרים רציונליים שלמים $u, v$.
+
+\bigskip
+\noindent\textbf{\underline{הוכחה.}}
+\[ D = 4\triangle \tag{1} \]
+לכל שיירכת תבנית מסוימת $(a,b,c)$ ריבועית שנונית בתנאי
+\[ D = b^2 - 4ac . \tag{2} \]
+ואמנם, אם ננית
+\[ b = 2b' \tag{3} \]
+אזי ימצא תמיד פתרון למשוואה
+\[ b'^2 - ac = \triangle \tag{4} \]
+במספרים $a, b', c$ שלמים.
+
+נבחר עתה במספרים $x, y$ מסוימים בתנאי:
+\[ (x,y) = 1 \tag{5} \]
+ונקבל
+\[ ax^2 + bxy + cy^2 = m \tag{6} \]
+בשביל $m$ שלם מסוימים.
+
+לפי שיטת הקלאסיפיקציה החדשה שקבענו בפרק ג' נגיע על סמך משפט 1, פרק ד', לידי משוואה מהצורה
+\[ u^2 - \triangle v^2 = 1 \tag{7} \]
+כאשר
+\[ D = 4\triangle \]
+\hfill מ.ש.ל.
+
+% [original page: 63]
+\noindent\textbf{2.} נביא כאן את המסקנות הידועות בתורת משוואת פל.
+
+\bigskip
+\noindent\textbf{\underline{משפט 2.}}
+כאשר $\triangle$ הוא מספר רציונלי שלם שאינו ריבוע, אזי אפשר לקבל את כל פתרונות המשוואה
+\[ \varepsilon^2 - \triangle \eta^2 = \pm 1 \tag{1} \]
+מהנוסחאות
+\[
+\left\{
+\begin{aligned}
+\varepsilon &= P_{ks-1} \\
+\eta &= Q_{ks-1}
+\end{aligned}
+\right. \tag{2}
+\]
+\[ k = 1, 2, 3, \ldots \]
+במקום ש
+\[ R_{ks-1} = \frac{P_{ks-1}}{Q_{ks-1}} \, , \quad k = 1, 2, 3, \ldots \]
+הוא שבר חלקי כלשהוא של השבר המשולב:
+\[ \sqrt{\triangle} = (q_0 \, , \; \overline{q_1 \, , \, q_2 \, , \, \ldots \, , \, q_s}) . \]
+
+את פתרונות המשוואה הנ"ל בסימן העליון מקבלים בשביל כל $k$ זוגי
+ואת פתרונות המשוואה הנ"ל בסימן התחתון מקבלים בשביל כל $k$ אי-זוגי.
+
+\bigskip
+\noindent\textbf{\underline{משפט 3.}}
+למשוואה
+\[ \varepsilon^2 - \triangle \eta^2 = -1 \]
+יש פתרון אז ורק אז כאשר מספר איברי המחזור $s$ הנו בלתי-זוגי; לעומת זאת יש פתרון למשוואה
+\[ \varepsilon^2 - \triangle \eta^2 = 1 \]
+בכל המקרים, כפי שקבענו במשפט 1.
+
+% [original page: 64]
+\noindent\textbf{\underline{משפט 4.}}
+כל פתרונות המשוואה
+\[ \varepsilon^2 - \triangle \eta^2 = \pm 1 \]
+נכללים בנוסחאות
+\[ \varepsilon + \eta\sqrt{\triangle} = \pm(\varepsilon_1 \pm \eta_1\sqrt{\triangle})^n \]
+במקום ש-$(\varepsilon_1, \eta_1)$ הנו הפתרון המינימלי של המשוואה.
+
+את פתרונות המשוואה הנ"ל לגבי הסימן העליון מקבלים בשביל כל $n$ זוגי, ואת פתרונות המשוואה הנ"ל לגבי הסימן התחתון מקבלים בשביל כל $n$ אי-זוגי.
+
+\bigskip
+\noindent\textbf{\underline{משפט 5.}}
+את כל פתרונות המשוואה
+\[ u^2 - Dv^2 = \pm 4 \]
+מקבלים מהנוסחאות
+\[ u = 2P_{ks-1} \, , \qquad v = Q_{ks-1} \]
+במקום ש:
+\[ R_{ks-1} = \frac{P_{ks-1}}{Q_{ks-1}} \]
+הוא השבר החלקי של השבר המשולב:
+\[ \sqrt{\triangle} = (q_0 \, , \; \overline{q_1 \, , \, q_2 \, , \, \ldots \, , \, q_s}) \]
+בתנאי:
+\[ D = 4\triangle \]
+או מהנוסחאות
+\[ u = 2P_{ks-1} - Q_{ks-1} \, , \qquad v = Q_{ks-1} \]
+כשהשברים החלקיים לקוחים מהשבר המשולב:
+
+% [original page: 65]
+\[ \frac{1 + \sqrt{D}}{2} = (q_0 \, , \; \overline{q_1 \, , \, q_2 \, , \, \ldots \, , \, q_s}) \]
+בתנאי:
+\[ D \equiv 1 \pmod{4} \]
+
+את פתרונות המשוואה בסימן העליון מקבלים בשביל כל $k$ זוגי ואת הפתרונות בסימן התחתון מקבלים בשביל כל $k$ אי-זוגי.
+
+\bigskip
+\noindent\textbf{\underline{משפט 6.}}
+את כל פתרונות המשוואה
+\[ u^2 - Dv^2 = \pm 4 \]
+מקבלים מהנוסחאות
+\[ \frac{u_n + v_n\sqrt{D}}{2} = \pm\left(\frac{u_1 \pm v_1\sqrt{D}}{2}\right)^n \]
+במקום ש-$u_1, v_1$ הנו הפתרון המינימלי של אותה משוואה. אם יש פתרון למשוואה גם בסימן התחתון אזי מקבלים את כל הפתרונות בסימן העליון בשביל כל $n$ זוגי ואת כל הפתרונות בסימן התחתון בשביל כל $n$ אי-זוגי.
+
+\bigskip
+\noindent\textbf{\underline{הערה 1.}}
+הפתרון המינימלי מקיים את המשוואה בסימן התחתון, כשיש בכלל פתרון למשוואה זאת.
+
+אם אין פתרון למשוואה בסימן התחתון אזי מקבלים את כל פתרונות המשוואות הנכללות במשפטים 4, 5 מהנוסחאות הכלליות בשביל כל $n$ טבעי.
+
+\bigskip
+\noindent\textbf{\underline{משפט 7.}}
+למשוואה
+\[ u^2 - Dv^2 = -4 \]
+יש פתרון בסימן התחתון רק כאשר מספר איברי המחזור $s$ הנו בלתי-זוגי.
+
+\medskip
+\noindent\textbf{3.} הביסוס לכל התורה שהבאנו על דבר משוואת פל מסתמך על תורה מיוחדת בשטח אי-רציונליות ריבועיות וגדלים אקוויולנטים מסוג זה. על תורה זו
+
+% [original page: 66]
+% NOTE: This source page is badly degraded in the scan (heavy double-strike/ghosted printing throughout); the printed page-number itself is smudged and reads more like "88" than "66", but sequence and content place it as page 66. Transcription below is best-effort; several words are uncertain.
+זאת מתבסס גם פתרון התבניות הריבועיות לפני רוב המחברים, אף אחרי [?] בדרך אחרת ולא ביחס לבסיס תוצאה הזאת;
+
+מה שנוגע לבסיס [?] פל; חוץ [?] לו המהלכים או צורך הוספיה למציאת הפתרון המינימלי [?] לחסחוך על תורה נדרך אריציוני ליבועיהם, את הביבליוגרפיה לכך בניא בסוף הפרק.
+% ILLEGIBLE: several words in the paragraph above could not be read with confidence due to the poor scan quality of this page.
+
+\medskip
+\noindent\textbf{4.} למסיה הכללת משוואת פל ביחס למקדמים חוב לקבוע את העובדה הזאת:
+
+\bigskip
+\noindent\textbf{\underline{משפט-עזר 1.}}
+\[ \eta_{2\bar{n}-1} \equiv \eta_1 \pmod{2} \tag{1} \]
+\[ \eta_{2\bar{n}} \equiv 0 \pmod{2} \tag{2} \]
+בשביל כל $\bar{n} = 1, 2, 3, \ldots$
+
+\bigskip
+\noindent\textbf{\underline{הוכחה.}}
+מהנוסחאות הכלליות אנו מקבלים
+\[ \varepsilon_{2\bar{n}} + \eta_{2\bar{n}}\sqrt{\triangle} = \pm(\varepsilon_1 \pm \eta_1\sqrt{\triangle})^{2\bar{n}} = \pm(p \pm 2q\sqrt{\triangle})^{\bar{n}} \]
+בשביל מספרים $p, q$ שלמים ולכך קיים
+\[ \eta_{2\bar{n}} = (\bar{n}p^{\bar{n}-1} + \triangle t) 2q \tag{3} \]
+בשביל מספר $t$ שלם, ומכאן המסקנה (2).
+
+יהי עתה
+\[ n = 2\bar{n} - 1 \]
+מספר אי-זוגי.
+
+מהנוסחאות הכלליות נובע מיד, שבמקרה זה קיים
+\[ \eta_n = n\varepsilon_1^{n-1}\eta_1 + \eta_1 \triangle t \tag{4} \]
+\[ = \varepsilon_1 \eta_1 t + \eta_1^n \triangle \frac{n-1}{2} \tag{5} \]
+% ILLEGIBLE: line (5) is partly obscured by the ghosted double-printing on this page; reconstructed by analogy with the parallel derivation on page 64.
+במקום ש-$t, 1$ הם מספרים שלמים מסוימים.
+
+% [original page: 67]
+מעתה נוכל להסיק מיד לפי משוואת פל עצמה, שבשביל $\triangle$ זוגי, \underline{ראשית}: המספר $\varepsilon_1$ הנו בלתי-זוגי; מכאן נקבל לפי (4) את המסקנה הדרושה; \underline{שנית}: בשביל $\triangle$ אי-זוגי, ומכאן, לפי (5) המסקנה הדרושה.
+
+\medskip
+\noindent\textbf{5.} נכתוב עתה את משוואת פל בצורה המתאימה לכל המקרים המקדימים, והיא:
+\[ \varepsilon^2 - D\eta^2 = e \, , \qquad (e = \pm 1, \pm 4) \tag{1} \]
+ואז תקבל הנוסחה הכללית את הצורה:
+\[ \varepsilon_n + \eta_n\sqrt{D} = \pm(\varepsilon_1 \pm \eta_1\sqrt{D})^n \tag{2} \]
+כאשר $e = 1$.
+וכן:
+\[ \varepsilon_n + \eta_n\sqrt{D} = \pm(\varepsilon_1 \mp \eta_1\sqrt{D})^{2n-1} \tag{3} \]
+כאשר $e = -1$
+ובאופן דומה
+\[ \frac{\varepsilon_n \pm \eta_n\sqrt{D}}{2} = \pm\left(\frac{\varepsilon_1 \pm \eta_1\sqrt{D}}{2}\right)^{2n-1} \tag{4} \]
+כאשר $e = -4$.
+
+כחיים, איפוא, פתרון לאחת המשוואות בסימן התחתון, קיימת הנוסחה המאוחדת:
+\[ \frac{\varepsilon_n \pm \eta_n\sqrt{D}}{\sqrt{-e}} = \pm\left(\frac{\varepsilon_1 \pm \eta_1\sqrt{D}}{\sqrt{-e}}\right)^{2n-1} \tag{5} \]
+בתנאי:
+\[ e = -1 \, , \; -4 \]
+
+% [original page: 68]
+נקבע עוד עתה את
+
+\bigskip
+\noindent\textbf{\underline{משפט-עזר 2.}}
+בשביל הפתרונות העיקריים של המשוואה (1) קיים
+\[ \eta_d \mid \eta_{2n-1} \, , \qquad \varepsilon_d \mid \varepsilon_{2n-1} \]
+כאשר $d \mid 2n-1$
+וקיים
+\[ \eta_d \mid \eta_{2n} \]
+כאשר $d \mid n$
+
+\bigskip
+\noindent\textbf{\underline{הוכחה.}}
+מהנוסחאות האחרונות אנו מקבלים
+\[ \pm(\sqrt{\pm e})^{n-1}(\varepsilon_n \pm \eta_n\sqrt{D}) = (u_1 + v_1\sqrt{D})^n = (u_d + v_d\sqrt{D})^{n_1} \]
+במקום
+\[ n = dn_1 . \]
+
+מכאן נובע מיד, כי:
+\[ \pm(\sqrt{\pm e})^{n-1}\varepsilon_n = u_d^{n_1} + u_dM + P \]
+\[ \pm(\sqrt{\pm e})^{n-1}\eta_n = nu_d^{n_1-1}v_d + v_dN + Q \]
+כאשר
+\[ P = Q = 0 \]
+בשביל $n_1$ אי-זוגי, ו-:
+\[ P = v_d^{n_1}D^{\frac{n_1}{2}} \, , \qquad Q = 0 \]
+בשביל $n_1$ זוגי. אולם לפי ההנחה הפתרונות $(\varepsilon_d, \eta_d), (\varepsilon_n, \eta_n)$ הם עיקריים ו-$n_1$ זוגי הוא חזקה של 2 ולכן הוכח משפט העזר.
+
+% [original page: 69]
+\noindent\textbf{6.} לבסוף נביא עוד כאן נוסחה אחת של פואנקרה בדבר הקשר בין הפתרונות המינימליים של משוואות פל בשני המקרים
+\[ e = 1 \, , \qquad e = 4 \]
+עבודה זאת היא:
+
+\bigskip
+\noindent\textbf{\underline{משפט-עזר 3.}}
+כאשר $(c_1, d_1) \, , \; (a_1, b_1)$
+הם הפתרונות המינימליים של המשוואות
+\[ a^2 - mb^2 = 1 \]
+\[ c^2 - md^2 = 4 \]
+בהתאמה, אזי קיים קשר
+\[ \left(\frac{c_1 + d_1\sqrt{m}}{2}\right)^3 = a_1 + b_1\sqrt{m} . \]
+
+ההוכחה לנכונותו של קשר זה היא די קלה.
+
+בדיוננו על הכללת משוואת פל נעשה שימוש מכל משפטי העזר שהבאנו ויחד עם הכללתה של משוואת פל עצמה גם הקשר של פואנקרה מקבל את הכללתו.
+
+\bigskip
+\noindent (+) \quad H. Poincaré , \quad Comptes Rendus , Paris
+
+\hspace{1.2cm} 91 , 1880 , 846.
+
+% [original page: 70]
+\subsection*{\S2. הכללת משוואת פל - פרמה}
+
+\noindent\textbf{1. מבוא.}
+
+מסקנות אחדות והן העיקריות ביחס לתורת המשוואה מהצורה
+\[ ax^2 - by^2 = \pm 1 \, , \; \pm 2 \, , \; \pm 4 \]
+פרסמתי בשנת 1936 בעתון המדעי
+
+\medskip
+\noindent\LR{Wiad. Matem. \quad T. XLIII s. 169--182, \quad 1936.}
+
+\medskip
+הסטיה עצמה נשארה ללא שינוי אולם בינתיים כמה הכללות בכיוונים שונים, ובעיקר נתקבלו מסקנות חדשות, הנוגעות במישרים בתורת התבניות הריבועיות בכלל ובעיקר בתורת התבניות הדו-צדדיות, כפי שיתברר בפרק הבא.
+
+הכללה מסויימת של משפט ריכלדה - פאלמשטרים נותנת מקום לקביעת נוסחאות כלליות לכל פתרונות המשוואה
+\[ ax^2 - by^2 = \pm 1 \]
+והן:
+\[
+\left\{
+\begin{aligned}
+ax_n^2 + by_n^2 &= \varepsilon_{2n-1} \\
+2x_ny_n &= \eta_{2n-1}
+\end{aligned}
+\right.
+\qquad n = 1, 2, 3, \ldots
+\]
+במקום מקיים
+\[ \varepsilon^2 - ab\eta^2 = 1 \]
+ו-
+\[ \eta_1 \equiv 0 \pmod{2} \]
+\[ \varepsilon + \eta\sqrt{ab} = \pm(\varepsilon_1 \pm \eta_1\sqrt{ab})^k \]
+בשביל $k > 0$
+
+כאשר
+\[ a > 0 \, , \qquad \eta_1 \not\equiv 0 \pmod{2} \]
+אין למשוואה הנ"ל כל פתרון.
+
+לעומת זאת כאשר
+\[ \eta_1 \not\equiv 0 \pmod{2} \]
+יש פתרון למשוואה
+\[ 2x^2 - By^2 = 1 \]
+
+% [original page: 71]
+וכל פתרונותיה נכללים בנוסחאות:
+\[
+\left\{
+\begin{aligned}
+2x_n^2 + By_n^2 &= \varepsilon_{2(2n-1)} \\
+2x_ny_n &= \eta_{2(2n-1)}
+\end{aligned}
+\right.
+\]
+בשביל כל
+\[ n = 1, 2, 3, \ldots \]
+
+בשני המקרים הנ"ל קיימות הנוסחאות
+\[ x_n\sqrt{a} + y_n\sqrt{b} = \pm(x_1\sqrt{a} \pm y_1\sqrt{b})^{2n-1} \]
+בשביל כל
+\[ n = 1, 2, 3, \ldots \]
+כאשר $(x_1, y_1)$ הנו הפתרון המינימלי של אותה משוואה.
+
+מסקנות דומות מתקבלות לגבי המשוואה
+\[ ax^2 - by^2 = \pm 2 . \]
+כל פתרונותיה נכללים בנוסחאות
+\[ ax_n^2 + by_n^2 = 2\varepsilon_{2n-1} \]
+\[ x_ny_n = \eta_{2n-1} \qquad n = 1, 2, 3, \ldots \]
+במקום ש-$\varepsilon_k, \eta_k$ מקיימים את המשוואה של פל הקודמת.
+
+חוץ מזה קיימות גם כאן נוסחאות דומות:
+\[ \frac{x_n\sqrt{a} + y_n\sqrt{b}}{\sqrt{2}} = \pm\left(\frac{x_1\sqrt{a} \pm y_1\sqrt{b}}{\sqrt{2}}\right)^{2n-1} \]
+
+בין השאר מתקבל המשפט האפשרויות האפשרויות מהצורה
+\[ ax^2 - by^2 = \pm 1 \, , \; \pm 2 \, , \qquad ab = D \]
+בשביל $D$ מסוים המתפרק לגורמים $a, b$ ניתנת לפתירה במספרים שלמים אחת ויחידה חוץ מהמקרה
+\[ a = 1 . \]
+
+לבסוף - החקירה השלמה של משוואת פל הכללת מהצורה
+\[ ax^2 - by^2 = \pm 4 . \]
+
+% === TRANSCRIPTION NOTES ===
+% - Page mapping: file p060.png..p079.png correspond to the printed page footers 52..71 (offset of -8), confirmed against the supplied golden example (p060.png -> printed page 52).
+% - Page "original page: 54" (file p064.png): the polynomial-function symbol before "(x)" is a stylized cursive letter in the scan; rendered plainly as f(x). Low confidence on exact glyph.
+% - Page "original page: 56" (file p066.png): the source uses a distinct handwritten/cursive symbol for the gcd-like quantity (Z-b, 2a) = (Z-b, 4am); approximated here as $\delta$.
+% - Page "original page: 57" (file p065.png): the phrase "מטרתה סניכרים" in the second paragraph is uncertain due to typewriter font ambiguity/light strike; transcribed as read, flagged here as low-confidence.
+% - Page "original page: 59" (file p067.png): the equation "p^2 - Aq^2 = 1, 2" describing Legendre's minimal-solution criterion is cropped at the left margin in the scan (only a fragment "2 - A^2 = 1, 2" is visible); reconstructed from mathematical context per the surrounding discussion of M x^2 - N y^2 = 1,2. Flagged as a reconstruction, not a direct read.
+% - Page "original page: 66" (file p074.png): this is the most degraded page in the whole range — the scan shows heavy double-strike/ghosted overprinting across the entire page, and even the printed page-footer number is smudged (reads more like "88" than "66"). Content placement in the sequence (between pages 65 and 67) makes "66" essentially certain despite the smudged footer. Several words in the opening paragraph (before "משפט-עזר 1") could not be read with confidence and are marked [?] inline; equation (5) is also partly reconstructed by analogy with the structurally parallel derivation on page 64 (file p072.png).
+% - All other pages in this range (52-53, 55, 58, 60-65, 67-71) were legible with normal typewriter-scan quality; transcription confidence is high for those pages, modulo the usual risk of misreading isolated symbols/subscripts in dense formula-heavy passages.

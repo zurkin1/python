@@ -1,0 +1,672 @@
+% [original page: 12]
+\noindent ולכן נקבל, בהתאם ל-(1), את השוויון:
+
+\[ (ex + fy)(e'x + f'y) = m \tag{4} \]
+
+\noindent ואם נפרק את $m$ למחלקים השונים בצורה:
+\[ m = m_i n_i \, , \quad i = 1 , 2 , 3 , \ldots \]
+\noindent יישאר לנו רק לפתור את מערכת השוויונים:
+
+\[ ex + fy = m_i \, , \qquad e'x + f'y = n_i \tag{5} \]
+\[ i = 1 , 2 , 3 , \ldots \]
+
+\noindent לפי הסדר ולקבל את הערכים $x$ , $y$ המתאימים גם ל-(1).
+
+\noindent במקרה זה נפתרת, איפוא, כל הבעיה באמצעים אלמנטריים.
+
+\bigskip
+\subsection*{3. $m = 0$}
+
+\noindent במקרה זה מובאת כל הבעיה לידי פתירת המשוואה:
+\[ a\left(\frac{x}{y}\right)^2 + b\left(\frac{x}{y}\right) + c = 0 \]
+\noindent וע"י מציאת שני הערכים $z_1$ , $z_2$ של המשוואה האחרונה מתקבלות שתי משוואות ממעלה ראשונה:
+\[ x = yz_1 \, , \qquad x = yz_2 \]
+\noindent אשר את פתרונן אנו מניחים כידוע.
+
+\bigskip
+\subsection*{4. $D$ אינו ריבוע מלא, $m \neq 0$}
+
+\noindent לחקירה יסודית אנו מצטמצמים רק, כאשר $D$ אינו ריבוע מלא וחוץ מזה מתקיים התנאי:
+\[ m \neq 0 \, . \]
+
+\noindent נניח, שקיימת הצגה מהצורה (1) של $m$ ע"י התבנית $(a,b,c)$ בתנאי (2). כידוע אפשר אז למצוא שני מספרים שלמים $s_0$ , $t_0$ המקיימים את השוויון:
+
+\[ s_0 x - t_0 y = 1 \tag{6} \]
+
+\noindent מאידך מתקבלת מערכת שלמה של פתרונות למשוואה זאת מהנוסחאות:
+
+\[ s_k = s_0 + ky \, , \qquad t_k = t_0 + kx \tag{7} \]
+
+% [original page: 13]
+\noindent בשביל כל $k$ שלם.
+
+\noindent נגדיר עתה את הגודל:
+
+\[ Z_k = (2ax+by)s_k + (2cy+bx)t_k \tag{8} \]
+
+\noindent אני טוען, שגודל זה אפייני הוא בשביל קבוצה שלמה של פתרונות המשוואה (1), ויהיה מספרם סופי או אין-סופי.
+
+\noindent ואמנם, לפי (1)(7)(8) אנו מקבלים מיד:
+\[ Z_k = Z_0 + (2ax+by)kx + (2cy+bx)ky = Z_0 + 2km \]
+\noindent ומכאן נופק, שאם נצטמצם לפתרון $s_0$ , $t_0$ יחיד אזי:
+
+\[ 0 \leq Z < 2|m| \tag{8} \]
+
+\noindent את כל הערכים האחרים בשביל $Z_k$ אנו מקבלים ע"י אותו פתרון $(x,y)$ של התבנית ע"י בחירת פתרונות $s_k$ , $t_k$ שונים, ועכ"ז אינם מאפיינים כל פתרון $(x,y)$ אחר מזה שבחרנו.
+
+\noindent נגיד מעתה שהפתרון $(x,y)$ [או קבוצת כל הפתרונות $(x,y)$], במקרה שיתכנו הרבה פתרונות, שייך לגודל $Z$ המוגדר לעיל, וגודל זה הוא המאפיין את הקבוצה השלמה, שכל אחד הפתרונות $(x,y)$ השייכים לה מוגדר.
+
+\noindent נסב עתה לתשומת לבנו את הזהות הבאה:
+\[ 4(ax^2+bxy+cy^2)(at^2+bts+cs^2) = \left[(2ax+by)t + (2cy+bx)s\right]^2 - D(sx-ty)^2 \]
+\noindent לפי (1)(6)(8) נקבל
+\[ Z^2 = 4m(at^2+bts+cs^2) + D \tag{9} \]
+\noindent ומכאן:
+\[ Z^2 \equiv D \pmod{4m} \tag{10} \]
+
+\noindent קבלנו, איפוא, את המשפט הבא:
+
+\bigskip
+\noindent\textbf{\underline{משפט 1.}}
+
+\noindent כל פתרון $(x,y)$ או קבוצת פתרונות של התבנית (1) שייך לסורג $Z$ אחד ויחיד של הקונגרואנציה (10) בתנאי:
+
+% [original page: 14]
+\[ 0 \leq Z < 4|m| \]
+
+\medskip
+\noindent ומכאן:
+
+\bigskip
+\noindent\textbf{\underline{מסקנה 1.}}
+
+\noindent התנאי ההכרחי לכן שיתקיים פתרון (1) הוא שהבוחן $D$ יהיה שארית ריבועית מודלו $4m$.
+
+\medskip
+\noindent מאידך, קל להיווכח, שאין תנאי זה מספיק לכך שיתקיים פתרון המשוואה (1).
+
+\noindent נסמן עוד לשם קיצור:
+\[ at^2 + bts + cs^2 = n \tag{11} \]
+\noindent המספר $n$ הוא, כמובן, שלם, וכפי שנובע מכל השוויונים (1)(6)(8)(11) תהיינה ההתבניות $(a,b,c)$, $(m,Z,n)$ אקוויולנטיות באופן עיקרי, באמצעות ההצגה
+\[ \begin{pmatrix} x , t \\ y , s \end{pmatrix} \]
+\noindent ומכאן:
+
+\bigskip
+\noindent\textbf{\underline{משפט 2.}}
+
+\noindent התנאי ההכרחי לכך, שתתקיים הצגת המספר $m$ ע"י התבנית $(a,b,c)$ באופן עיקרי הוא שיתקיים
+
+\[ (a,b,c) \sim (m,Z,n) \]
+
+\medskip
+\noindent אולם קל להיווכח, שתנאי זה הוא גם מספיק. ואמנם, אם $Z$ הנו שורש הקונגרואנציה (10) הרי קיים מספר שלם $n$ המוגדר עפ"י השוויון:
+\[ n = \frac{Z^2 - D}{4m} \tag{12} \]
+\noindent ומאידך, אם $(a,b,c) \sim (m,Z,n)$ הרי אפשר למצוא מספרים שלמים $q$ , $r$ , $s$ , $t$ באופן שיתקיימו השוויונים:
+
+\[ \left\{ \begin{aligned} & sq - rt = 1 \\ & \begin{pmatrix} q , t \\ r , s \end{pmatrix} (a,b,c) = (m,Z,n) \end{aligned} \right. \tag{13} \]
+
+% [original page: 15]
+\noindent ולכן מתקיימים השוויונים:
+
+\[ \left\{ \begin{aligned} & aq^2 + bqr + cr^2 = m \\ & 2aqt + b(qs+rt) + 2crs = Z \\ & at^2 + bts + cs^2 = n \end{aligned} \right. \tag{14} \]
+
+\noindent והראשון מבין השוויונים הללו נותן אמנם אותה הצגה אחת של $m$ ע"י התבנית $(a,b,c)$. לפיכך נוכל לקבוע את המשפט:
+
+\bigskip
+\noindent\textbf{\underline{משפט 3.}}
+
+\noindent התנאי ההכרחי והמספיק לכך שתתקיים הצגה אחת לפחות מהצורה (1), הוא, שיתקיימים:
+
+\[ (a,b,c) \sim (m,Z,n) \]
+
+\noindent כאשר
+\[ \left. \begin{aligned} & Z^2 \equiv D \pmod{4m} \\ & n = \dfrac{Z^2-D}{4m} \end{aligned} \right\} \]
+
+\bigskip
+\noindent\textbf{\underline{הערה.}}
+
+\noindent לפי \S2, 5, פרק א', ישאר המשפט בתקפו גם, כאשר $(a,b,c) \sim (m,-Z,n)$ כי:
+\[ (a,b,c) \sim (m,-Z,n) \sim (m,Z,n) \]
+\[ (a,b,c) \sim (m,Z,n) \, . \]
+
+% [original page: 16]
+\subsection*{2\S. תכונת הפתרונות השייכים לקבוצה אחת.}
+
+\noindent\textbf{1.} נברר עתה תכונה אחת האפיינית לגבי קבוצת הפתרונות השייכים לאותו שורש $Z$ של הקונגרואנציה
+
+\[ \left. \begin{aligned} & Z^2 \equiv D \pmod{4m} \\ & 0 \leq Z < 2|m| \end{aligned} \right\} \tag{1} \]
+
+\noindent תוכן התכונה הזאת נכלל במשפט הבא:
+
+\bigskip
+\noindent\textbf{\underline{משפט 4.}}
+
+\noindent לגבי כל שני פתרונות $(x,y)$ , $(x_1,y_1)$ של השוויון
+
+\[ ax^2 + bxy + cy^2 = m \tag{2} \]
+
+\noindent השייכים לאותו שורש $Z$ של הקונגרואנציה (1) מתקיימים התנאי
+
+\[ xy_1 - x_1y \equiv 0 \pmod{m} \tag{3} \]
+
+\bigskip
+\noindent\textbf{\underline{הערה.}}
+
+\noindent במקרה שאין יותר מפתרון אחד $(x,y)$ לסוויון (2) המשפט הוא מחוסר תוכן, אם לא נסכים להרחיבו ע"י הכנסת זוג פתרונות שווים:
+\[ x \equiv x_1 \, , \quad y \equiv y_1 \]
+\noindent שאז הוא מתקיים באופן זהותי:
+\[ xy_1 - x_1y = xy - xy = 0 \equiv 0 \pmod{m} \]
+
+\bigskip
+\noindent\textbf{\underline{הוכחה.}}
+
+\noindent יהי
+\[ ax^2 + bxy + cy^2 = m \]
+\noindent וגם
+\[ ax_1^2 + bx_1y_1 + cy_1^2 = m \]
+\noindent בתנאי ששני הפתרונות $(x,y)$ , $(x_1,y_1)$ שייכים לאותו שורש $Z$ של הקונגרואנציה (1).
+
+\noindent לפי הנאמר בסעיף הקודם מתקיים אז:
+
+\[ (2ax+by)t + (2cy+bx)s = Z \, , \qquad sx - ty = 1 \tag{4} \]
+
+% [original page: 17]
+\noindent משתי הנוסחאות האחרונות נופק מיד, כי:
+\[ Zx = (2ax+by)tx + (2cy+bx)(1+ty) \]
+\noindent או:
+\[ Zx = 2tm + bx + 2cy \tag{5} \]
+\noindent ובאופן דומה נקבל:
+\[ Zy = 2sm - 2ax - by \tag{6} \]
+
+\noindent את שתי הנוסחאות הללו אפשר גם לכתוב בצורה:
+
+\[ \left\{ \begin{aligned} (Z-b)x - 2cy &= 2tm \\ (Z+b)y + 2ax &= 2sm \end{aligned} \right. \tag{7} \]
+
+\noindent כמו"כ קיים:
+
+\[ \left\{ \begin{aligned} (Z-b)x_1 - 2cy_1 &= 2t_1m \\ (Z+b)y_1 + 2ax_1 &= 2s_1m \end{aligned} \right. \tag{8} \]
+
+\noindent במקום
+\[ s_1x_1 - t_1y_1 = 1 \]
+
+\noindent מן הנוסחאות הללו אנו מקבלים צורת קונגרואנציות:
+
+\[ (Z-b)x - 2cy \equiv 0 \pmod{2m} \tag{א} \]
+\[ (Z+b)y + 2ax \equiv 0 \pmod{2m} \tag{ב} \]
+\[ (Z-b)x_1 - 2cy_1 \equiv 0 \pmod{2m} \tag{ג} \]
+\[ (Z+b)y_1 + 2ax_1 \equiv 0 \pmod{2m} \tag{ד} \]
+
+\noindent ע"י הכפלת (א) ב-$y_1$ ו-(ג) ב-$y$ אנו מקבלים:
+\[ (Z-b)(xy_1 - x_1y) \equiv 0 \pmod{2m} \]
+\noindent ובאופן דומה:
+\[ (Z+b)(xy_1 - x_1y) \equiv 0 \pmod{2m} \]
+\[ 2a(xy_1 - x_1y) \equiv 0 \pmod{2m} \]
+\[ 2c(xy_1 - x_1y) \equiv 0 \pmod{2m} \]
+\noindent משתי הקונגרואנציות הראשונות נופק, כי:
+
+% [original page: 18]
+\[ 2b(xy_1 - x_1y) \equiv 0 \pmod{2m} \]
+
+\noindent אולם בהנחה שאין ל-$a$ , $b$ , $c$ כל מחלק משותף אנו מסיקים מכלל המסיקים מכל המסיקים הקונגרואנציות האחרונות מיד, כי:
+
+\[ \boxed{ xy_1 - x_1y \equiv 0 \pmod{m} } \]
+
+\medskip
+\hfill מ.ש.ל.
+
+\bigskip
+\noindent נוכיח עתה את העובדה ההפוכה מזאת האחרונה, והיא הנכללת במשפט:
+
+\bigskip
+\noindent\textbf{\underline{משפט 5. (הפוך)}}
+
+\noindent אם בשביל שני פתרונות $(x,y)$ , $(x_1,y_1)$ מתקיים
+\[ xy_1 - x_1y \equiv 0 \pmod{m} \]
+\noindent אזי שניהם שייכים לאותו שורש $Z$ של הקונגרואנציה (1).
+
+\bigskip
+\noindent\textbf{\underline{הוכחה.}}
+
+\noindent יהי
+\[ xy_1 - x_1y \equiv 0 \pmod{m} \tag{1} \]
+\noindent ונניח, שהפתרונות $(x,y)$ , $(x_1,y_1)$ שייכים לשני השרשים $Z$ , $Z'$ בהתאמה.
+
+\noindent בדרך הקודמת נווכח, שקיימות הנוסחאות:
+
+\[ (Z-b)x - 2cy \equiv 0 \pmod{2m} \tag{2} \]
+\[ (Z+b)y + 2ax \equiv 0 \pmod{2m} \tag{3} \]
+\noindent בשביל הזוג $(x,y)$ וכן:
+\[ (Z'-b)x_1 - 2cy_1 \equiv 0 \pmod{2m} \tag{4} \]
+\[ (Z'+b)y_1 + 2ax_1 \equiv 0 \pmod{2m} \tag{5} \]
+\noindent בשביל הזוג $(x_1,y_1)$.
+
+\noindent מהקונגרואנציות (2)(4) אנו מקבלים
+\[ (Z-b)xx_1 - 2cyx_1 \equiv 0 \pmod{2m} \]
+\[ (Z'-b)xx_1 - 2cxy_1 \equiv 0 \pmod{2m} \]
+\[ \Rightarrow \quad (Z-Z')xx_1 + 2c(xy_1 - x_1y) \equiv 0 \pmod{2m} \]
+
+% [original page: 19]
+\noindent ולכן, לפי (1):
+\[ (Z-Z')xx_1 \equiv 0 \pmod{2m} \tag{6} \]
+\noindent מהקונגרואנציות (3)(5) אנו מקבלים
+\[ (Z+b)yy_1 + 2axy_1 \equiv 0 \pmod{2m} \]
+\[ (Z'+b)yy_1 + 2ax_1y \equiv 0 \pmod{2m} \]
+\[ (Z-Z')yy_1 \equiv 0 \pmod{2m} \tag{7} \]
+
+\noindent נניח עתה, כי:
+\[ (a,m) = 1 \, , \qquad (c,m) = 1 \, . \]
+\noindent מתוך
+\[ ax^2 + bxy + cy^2 = m \]
+\noindent נסיק אז מיד, כי:
+\[ (x,m) = (y,m) = 1 \, ; \tag{8} \]
+
+\noindent הואיל ולו היה
+\[ (x,m) = d \quad\Rightarrow\quad x = dx' \, , \quad m = dm' \]
+\noindent היה נופק מיד
+\[ ad^2x'^2 + bx'dy + cy^2 = m'd \, , \quad (c,m) = 1 \]
+\noindent כי: $d \mid c$ ; ובכן: $(m,c) = d$
+
+\noindent בניגוד להנחה.
+
+\noindent באותו אופן ניווכח, ג"כ, שקיים $(y,m) = 1$.
+
+\noindent על סמך (8) נסיק מיד מן הקונגרואנציות (6)(7), כי:
+\[ Z - Z' \equiv 0 \pmod{m} \]
+\noindent כלומר
+\[ Z \equiv Z' \pmod{m} \]
+\noindent וע"כ הפתרונות $(x,y)$ , $(x_1,y_1)$ שייכים בהתאם להנחה
+\[ 0 \leq Z < 2|m| \]
+\noindent לשורש $Z$ אחד.
+
+\medskip
+\hfill מ.ש.ל.
+
+% [original page: 20]
+\subsection*{3\S. מציאת כל הפתרונות השייכים לקבוצה אחת, כשאחד מהם נתון, עפ"י משוואת פל.}
+
+\noindent\textbf{1.} בשם משוואת פל אנו קוראים למשוואה הדיופנטית מהצורה
+\[ u^2 - Dv^2 = 4 \tag{1} \]
+\noindent בשביל $D$ שלם מסוים.
+
+\noindent בתורת המשוואה הזאת ובהכלליתה נעסוק עוד בפרק מיוחד. נביא רק כאן את המסקנה העיקרית, הידועה בתורה הזאת, והיא:
+
+\noindent כל הפתרונות $u$ , $v$ של המשוואה הזאת נכללים בנוסחה:
+
+\[ \frac{u_n + v_n\sqrt{D}}{2} = \pm \left( \frac{u_1 \pm v_1\sqrt{D}}{2} \right)^n \tag{2} \]
+
+\noindent בשביל כל $n$ שלם, במקום $u_1$ , $v_1$ הננו הפתרון המינימלי של המשוואה (1).
+
+\noindent את כל הפתרונות של משוואת פל אפשר, איפוא, לקבל ע"י פיתוח האגף הימני של הבינום (2) ולהשוות את החלקים הרציונליים והאי-רציונליים משני האגפים זה לזה, לאחר שנמצא הפתרון $u_1$ , $v_1$ המינימלי של המשוואה.
+
+\noindent\textbf{2.} יהיו עתה $(x,y)$ , $(x_1,y_1)$ שני פתרונות המשוואה
+\[ ax^2 + bxy + cy^2 = m \tag{1} \]
+\noindent השייכים לאותו שורש $Z$ של הקונגרואנציה
+\[ \left. \begin{aligned} & Z^2 \equiv D \pmod{4m} \\ & 0 \leq Z < 4|m| \end{aligned} \right\} \tag{2} \]
+\noindent לפי משפט 4 שבסעיף הקודם מתקיים אז:
+\[ xy_1 - x_1y \equiv 0 \pmod{m} \tag{3} \]
+\noindent לפי הזהות
+\[ \left[2axx_1 + b(xy_1+x_1y) + 2cyy_1\right]^2 - D(xy_1-x_1y)^2 = 4(ax^2+bxy+cy^2)(ax_1^2+bx_1y_1+cy_1^2) = 4m^2 \tag{4} \]
+
+% [original page: 21]
+\noindent נסיק מיד, כי:
+
+\[ \left\{ \begin{aligned} 2axx_1 + b(xy_1+x_1y) + 2cyy_1 &= mu \\ xy_1 - x_1y &= mv \end{aligned} \right. \tag{5} \]
+
+\noindent בשביל $u$ , $v$ שלמים מסוימים.
+
+\noindent לפיכך נקבל מיד ממשוואה (4):
+\[ u^2 - Dv^2 = 4 \]
+\noindent כלומר את משוואת פל הידועה.
+
+\noindent מאידך גיסא נקבל מפתרון מערכת המשוואות (5), ביחס ל-$x$ , $y$:
+
+\[ \left\{ \begin{aligned} x &= \frac{u+bv}{2}\,x_1 + cvy_1 \\ y &= \frac{u-bv}{2}\,y_1 - avx_1 \end{aligned} \right. \tag{6} \]
+
+\noindent מכאן:
+
+\bigskip
+\noindent\textbf{\underline{מסקנה 6.}}
+
+\noindent את כל פתרונות המשוואה
+\[ ax^2 + bxy + cy^2 = m \]
+\noindent השייכים לקבוצת $Z$ אחת אפשר לקבל מתוך הנוסחאות (6) כאשר $x_1$ , $y_1$ הנו אחד הפתרונות השייכים לקבוצה זאת.
+
+\bigskip
+\noindent\textbf{3.} נשאר עתה עוד להוכיח, שכל זוג מספרים $x$ , $y$ המוגדר עפ"י הנוסחאות (6) האחרונות, במקום $x_1$ , $y_1$ הנו אחד הפתרונות הידועים ו-$u$ , $v$ אחד הפתרונות של משוואת פל, מקיימים באמת את ההצגה
+\[ ax^2 + bxy + cy^2 = m \]
+\noindent ואמנם קל להיווכח גם בדבר זה. כי מן הנוסחאות דלעיל מקבלים מיד
+\[ xy_1 - x_1y = \frac{u+bv}{2}x_1y_1 + cvy_1^2 - \left(\frac{u-bv}{2}x_1y_1 - avx_1^2\right) = \]
+\[ = bvx_1y_1 + avx_1^2 + cvy_1^2 = v(ax_1^2+bx_1y_1+cy_1^2) = mv \tag{1} \]
+\noindent לפי ההנחה, כי:
+\[ ax_1^2 + bx_1y_1 + cy_1^2 = m \]
+
+% [original page: 22]
+\noindent וכן כי:
+\[ 2axx_1 + b(xy_1+x_1y) + 2cyy_1 = mu \]
+\noindent ולפיכך נסיק מתוך הזהות הידועה, כי:
+\[ 4m(ax^2+bxy+cy^2) = m^2(u^2-Dv^2) \]
+\noindent או על סמך השוויון
+\[ u^2 - Dv^2 = 4 \]
+\noindent כי:
+\[ ax^2 + bxy + cy^2 = m \]
+
+\medskip
+\hfill מ.ש.ל.
+
+\bigskip
+\noindent\textbf{\underline{הערה.}}
+
+\noindent מההוכחה הזאת נובע ג"כ, שהפתרון $(x,y)$ הנמצא בדרך דלעיל שייך לקבוצת $Z$ אחת של הפתרון $(x_1,y_1)$, מאחר שמתקיים, כפי שראינו
+\[ xy_1 - x_1y \equiv 0 \pmod{m} \]
+
+\bigskip
+\begin{center}
+--------------
+\end{center}
+
+% [original page: 23]
+\section*{פרק ג'}
+
+\begin{center}
+\textbf{קלסיפיקציה חדשה.}
+\end{center}
+
+\subsection*{1\S. על משפט עזר אחד.}
+
+\noindent\textbf{1.} נתונה תבנית ריבועית
+\[ (a,b,c) \tag{1} \]
+\noindent אשר מספר שלם $m$ ניתן להצגה על-ידה, באופן שמתקיים:
+\[ ax^2 + bxy + cy^2 = m \tag{2} \]
+\noindent בתנאי:
+\[ (x,y) = 1 \tag{3} \]
+\noindent במספרים שלמים $x$ , $y$ מסוימים.
+
+\noindent נניח, כי:
+\[ (D,m) = 1 \tag{4} \]
+\[ D = b^2 - 4ac \neq 0 \]
+\noindent בהמשך הדברים תתברר סיבת הנחה כזאת.
+
+\noindent בשביל חקירותינו הבאות ישנה חשיבות להנחה:
+\[ (a,m) = 1 \, , \qquad (c,m) = 1 \tag{5} \]
+\noindent הואיל ועל סמך הנחה כזאת אנו רשאים להסיק, כי:
+\[ (x,m) = 1 \, , \qquad (y,m) = 1 \tag{6} \]
+\noindent כפי שרואים מיד מנוסחה (2).
+
+\noindent אולם בכדי שמסקנותינו תישארנה בתקפן לגבי תבנית ריבועית כלשהי נוכיח את המשפט הבא:
+
+\bigskip
+\noindent\textbf{\underline{משפט עזר 1.}}
+
+\noindent אם מספר שלם $m$ ניתן להצגה באופן עיקרי ע"י תבנית ריבועית $(a,b,c)$ בתנאי:
+\[ (D,m) = 2^{\lambda} \tag{7} \]
+\noindent אזי:
+
+\noindent א) כאשר $\lambda = 0$
+
+\noindent אפשר למצוא שני מספרים שלמים $\alpha$ , $\gamma$ המקיימים את התנאים
+\[ \left\{ \begin{aligned} (a\alpha^2+b\alpha\gamma+c\gamma^2,\, m) &= 1 \\ (\alpha,\gamma) &= 1 \end{aligned} \right. \tag{8} \]
+
+% [original page: 24]
+\noindent ב) כאשר $\lambda = 1$
+
+\noindent אפשר למצוא ארבעה מספרים שלמים $(\alpha_1,\gamma_1)$ , $(\alpha_2,\gamma_2)$
+
+\noindent אשר כל שניים מהם מקיימים את התנאי (8) ונוסף על כך את התנאי
+\[ \alpha_1\gamma_2 - \alpha_2\gamma_1 = \pm 1 \tag{9} \]
+
+\bigskip
+\noindent\textbf{\underline{הוכחה.}}
+
+\noindent לפי ההנחה (2) אפשר למצוא שני מספרים $\alpha_0$ , $\gamma_0$ שלמים באופן שמתקיים השוויון:
+\[ \alpha_0y - \gamma_0x = 1 \]
+\noindent והפתרון הכללי של המשוואה
+\[ \alpha y - \gamma x = 1 \tag{10} \]
+\noindent ביחס ל-$\alpha$ , $\gamma$ יהיה כלול בנוסחאות:
+\[ \alpha_k = \alpha_0 + kx \, , \qquad \gamma_k = \gamma_0 + ky \tag{11} \]
+\noindent בשביל מספר $k$ שלם כלשהו.
+
+\noindent נגדיר עתה את הגדלים:
+\[ \left\{ \begin{aligned} a_k &= a\alpha_k^2 + b\alpha_k\gamma_k + c\gamma_k^2 \\ b_k &= (2a\alpha_k+b\gamma_k)x + (2c\gamma_k+b\alpha_k)y \end{aligned} \right. \tag{12} \]
+\noindent בהתאם לנוסחאות (11) נקבל מיד:
+\[ a_k = a_0 + b_0k + mk^2 \tag{13} \]
+
+\noindent נבחר עתה במספר $k$ שלם באופן שיתקיים:
+\[ (b_0k+a_0,\, m) = 1 \tag{14} \]
+\noindent בחירה כזאת היא אפשרית תמיד, בתנאי:
+\[ (D,m) = 1 \, ; \]
+\noindent ואמנם, המספר $b_k$ מקיים את הקונגרואנציה הבינומיאלית
+\[ b_k^2 \equiv D \pmod{4m} \]
+\noindent כפי שנופק מהנוסחאות (12)(2); לפיכך יתקיים:
+\[ (b_k,m) = 1 \]
+
+% [original page: 25]
+\noindent כאשר $(D,m)=1$, ולכן יש פתרון לקונגרואנציה מהמעלה הראשונה
+\[ b_0k + a_0 \equiv n \pmod{m} \]
+\noindent בשביל מספר $n$ שלם כלשהו הזר ל-$m$.
+
+\noindent מספר $n$ כזה קיים תמיד, מאחר ש-
+\[ \varphi(m) \geq 1 \, , \]
+\noindent במקום $\varphi$ היא הפונקציה הידועה של גאוס (או של אוילר).
+
+\noindent המספרים $\alpha_k$ , $\gamma_k$ במקום $k$ המקיים את הדרישות דלעיל הם המקיימים את הדרישות שבחלק הראשון ממשפט העזר שלנו.
+
+\noindent אולם המספרים $\alpha_k$ , $\gamma_k$ הם זרים ביניהם ולכן אפשר לקבוע שני מספרים $\beta_0$ , $\delta_0$ המקיימים את התנאים:
+\[ \alpha_k\delta_0 - \gamma_k\beta_0 = \pm 1 \tag{15} \]
+\noindent והפתרון הכללי של ערכי $\beta$ , $\delta$ ימצא במערכת הנוסחאות:
+\[ \beta_t = \beta_0 + t\alpha_k \, , \qquad \delta_t = \delta_0 + t\gamma_k \tag{16} \]
+\noindent בשביל $t$ שלם כלשהו.
+
+\noindent נגדיר עתה את הגודל
+\[ b'_t = (2a\alpha_k+b\gamma_k)\beta_t + (2c\gamma_k+b\alpha_k)\delta_t \tag{17} \]
+\noindent ונקבל בהתאם לנוסחאות (16):
+\[ b'_t = b'_0 + 2a_kt \tag{18} \]
+\noindent נקבע עוד את $t$ באופן שיתקיים:
+\[ 2a_kt + b'_0 \equiv 0 \pmod{m} \tag{19} \]
+\noindent המספר $b'_0$ מקיים בהתאם לנוסחה (15) את הקשר:
+\[ b_0'^2 - 4a_kc' = D \tag{20} \]
+\noindent בשביל $c'$ שלם מסוים, ולפיכך נוכל להסיק מיד, שהקונגרואנציה (19) היא אפשרית, אז ורק אז כאשר $D$, $m$ הם \underline{בבת-אחת} זוגיים או לא-זוגיים.
+
+\noindent מכאן, שאם התנאים האחרונים מתקיימים, המספר $b'_t$ מתחלק ב-$m$, ומכאן נופק, בהתאם לנוסחה (20), שמתקיים ג"כ
+\[ (c' = a\beta_t^2 + b\beta_t\delta_t + c\delta_t^2,\, m) = 1 \, , \]
+
+% [original page: 26]
+\noindent הואיל ובמקרה אחר היה צריך להיות
+\[ (D,m) > 1 \]
+\noindent בניגוד להנחה.
+
+\noindent חוץ מזה מקיימים המספרים $\alpha_k$ , $\gamma_k$ ; $\beta_t$ , $\delta_t$ את השוויון (15) כפי שקבענו.
+
+\noindent על סמך משפט העזר שהוכחנו, אנו מסיקים, שכל תבנית ריבועית היא אקוויוולנטית לתבנית ריבועית אחרת, שבשבילה מתקיימים התנאים שדרשנו (5). לפיכך נוכל מעתה להצטמצם לחקירת אותן התבניות, שבשבילן התנאים (5) מתקיימים.
+
+\bigskip
+\noindent\textbf{\underline{הערה.}}
+
+\noindent את החלק הראשון של משפט העזר שהוכחנו אפשר להוכיח בדרך קצרה מאוד, כפי שעשה זאת גאוס ב-D.A. (art. 228).
+
+\noindent לפי דרכו קל גם למצוא את המספרים $\alpha$ , $\gamma$ המקיימים את הדרישה (8). החלק השני של משפט העזר שהוכחנו מהווה הכללה ניכרת של משפט גאוס ואינו נובע בשום פנים מדרך ההוכחה של גאוס.
+
+% [original page: 27]
+\subsection*{2\S. התחלקות הפתרונות.}
+
+\noindent\textbf{1.} תהי נתונה תבנית ריבועית $(a,b,c)$ ומספר שלם $m$ הנתון להצגה ע"י, באופן שמתקיימים התנאים:
+
+\[ ax^2 + bxy + cy^2 = m \tag{1} \]
+\[ (a,m) = 1 \, , \qquad (c,m) = 1 \tag{2} \]
+\[ (x,m) = 1 \, , \qquad (y,m) = 1 \, ; \tag{3} \]
+\[ (D,m) = 1 \qquad (D \gtrless 0) \tag{4} \]
+\[ (x,y) = 1 \, . \tag{5} \]
+
+\noindent יהי עתה $m_1$ מספר שלם כלשהו המחלק את $m$; ובכן:
+\[ m_1 \mid m \tag{6} \]
+\noindent ויהי עוד $\nu$ מספר טבעי כלשהו.
+
+\noindent לפי השני מהתנאים (3) אפשר לקבוע שני מספרים שלמים $r$ , $q$ באופן שמתקיים השוויון:
+
+\[ \boxed{ x = m_1^{\nu} q + ry } \tag{7} \]
+
+\noindent הפתרון הכללי של משוואה זאת ביחס לגדלים $r$ , $q$ ימצא במערכת:
+
+\[ \left\{ \begin{aligned} r_k &= r_0 + km_1^{\nu} \\ q_k &= q_0 - ky \end{aligned} \right. \tag{8} \]
+
+\noindent במקום ש-$r_0$ , $q_0$ מהווים את אחד הפתרונות הנ"ל ו-$k$ הנו מספר שלם כלשהו.
+
+\noindent מכאן נופק מיד, שבין כל ערכי $r$ נמצא אחד ויחיד המקיים את התנאי הנוסף
+\[ 0 \leq r < |m_1^{\nu}| \tag{9} \]
+
+\noindent בהצבנו עתה את הערך $x$ לתבנית (1) נקבל במקום $x$ לאחר פיתוח וסידור מתאים את המשוואה:
+
+\[ am_1^{2\nu}q^2 + m_1^{\nu}(2ar+b)qy + (ar^2+br+c)y^2 = m \tag{10} \]
+
+% [original page: 28]
+\noindent את המשוואה האחרונה קבלנו למעשה ע"י טרנספורמציה בעזרת ההצגה
+\[ \begin{pmatrix} m_1^{\nu} & r \\ 0 & 1 \end{pmatrix} \tag{11} \]
+\noindent הדטרמיננטה של הצגה זאת היא:
+\[ \begin{vmatrix} m_1^{\nu} & r \\ 0 & 1 \end{vmatrix} = m_1^{\nu} \tag{12} \]
+
+\noindent נסמן לשם קיצור את התבנית (1) ב-$F$ ואת התבנית (10) ב-$f$. נסב עוד לב לעובדה שכל הפעולות הקודמות הן הפיכות (רברסיביליות); כלומר, מקיום המשוואה (10) נובע באמצעות הקשר (7) שקיימים מספרים שלמים $x$ , $y$ המקיימים את המשוואה (1), ונוכל לקבוע את המשפט הבא:
+
+\bigskip
+\noindent\textbf{\underline{משפט 1.}}
+
+\noindent התנאי ההכרחי והמספיק למציאות פתרון למשוואה (1) הוא, שיתקיים היחס:
+\[ F \supset f \]
+
+\bigskip
+\noindent\textbf{2.} על סמך ההנחה (6) נופק מיד מהשוויון (10), שמוכרח להתקיים
+\[ ar^2 + br + c \equiv 0 \pmod{m_1} \tag{13} \]
+\noindent ומכאן אנו מסיקים, שלכל פתרון $(x,y)$ של התבנית (1) יתאים שורש $r$ מתאים של הקונגרואנציה (13). לפי"ז נוכל גם לקבוע את
+
+\bigskip
+\noindent\textbf{\underline{משפט 2.}}
+
+\noindent התנאי ההכרחי לכך שהמספר $m$ יוצג ע"י התבנית (1) הוא קיום הקונגרואנציה (13).
+
+\medskip
+\noindent מאידך ברור שתנאי זה אינו מספיק לכך שהמספר $m$ יוצג ע"י התבנית הנתונה.
+
+\bigskip
+\noindent\textbf{3.} נניח עתה
+\[ ar^2 + br + c = m_1 n \tag{14} \]
+\noindent ע"י חישוב קל ניווכח, שקיים:
+\[ m_1^{2\nu}(2ar+b)^2 - 4am_1^{2\nu}\cdot m_1n = m_1^{2\nu}\left[(2ar+b)^2 - 4am_1n\right] = m_1^{2\nu}D \]
+
+% [original page: 29]
+\noindent או:
+\[ (2ar+b)^2 - 4am_1n = D \tag{15} \]
+\[ \Rightarrow \quad (2ar+b)^2 \equiv D \pmod{4am_1} \]
+
+\noindent ולכן אם מצטמצמים לערכים לא קונגרואנטיים מוכרח להתקיים:
+\[ 0 \leq 2ar + b < 4|am_1| \, . \tag{16} \]
+
+\noindent באחד הפרקים שיבואו נעשה עוד שימוש בהגבלה מהגבלה זאת.
+
+\noindent\textbf{4.} נייחס מעתה לכל שורש $r$ פרימיטיבי של הקונגרואנציה (13) את הפתרון $(x,y)$ של התבנית (1) המסתייך לו, לפי הקשר (7). כפי שיתברר להלן, ישנם, לכל תבנית ריבועית המייצגת מספר $m$ מסוים, פתרונות $(x,y)$ במספר אין-סופי, כאשר
+\[ D > 0 \]
+\noindent ומכיוון שמספר שרשי הקונגרואנציה (13) הפרימיטיביים הוא סופי, נופק מיד, שלכל אחד השרשים $r$ הללו שייכים פתרונות $(x,y)$ במספר אין-סופי, כי כפי שיתברר עוד, התחלקות הפתרונות $(x,y)$ עפ"י השתייכותם לשורש $r$ זה או אחר היא שוה — במידת מה — בתנאים האמורים.
+
+\noindent כאשר
+\[ D < 0 \]
+\noindent מספר הפתרונות $(x,y)$ הוא אמנם סופי, כפי שנראה עוד להלן, אבל התחלקותם נעשית בדרך אחת בכל המקרים. להלן יתברר עוד, שלא לכל שורש $r$ של הקונגרואנציה (13) שייכת קבוצת פתרונות $(x,y)$ של התבנית (1).
+
+\noindent\textbf{5.} נניח עתה עוד לשם קיצור
+\[ 2ar + b = Z \tag{17} \]
+\noindent ונוסף על כך נגביל את עצמנו לטיפול במקרים:
+\[ \left\{ \begin{aligned} m_1m_2 &= m \\ (m_1,m_2) &= 1 \, . \end{aligned} \right. \tag{18} \]
+
+% [original page: 30]
+\noindent לפי"ז נקבל מיד מהמשוואה (10), שנוכרח להתקיים
+\[ am_1^{2\nu-1}q^2 + m_1^{\nu-1}Zqy + ny^2 = m_2 \tag{19} \]
+\noindent בוחן התבנית
+\[ (am_1^{2\nu-1},\, Zm_1^{\nu-1},\, n) \tag{20} \]
+\noindent הוא, כפי שנובע מכל ההנחות הקודמות,
+\[ m_1^{2(\nu-1)}Z^2 - 4nam_1^{2\nu-1} = m_1^{2(\nu-1)}D \, . \tag{21} \]
+
+\noindent מכאן אנו מקבלים את
+
+\bigskip
+\noindent\textbf{\underline{משפט 3.}}
+
+\noindent אם מספר $m$ ניתן להצגה באופן עיקרי ע"י התבנית
+\[ (a,b,c) \]
+\noindent בעלת הבוחן
+\[ D = b^2 - 4ac \qquad (D \gtrless 0) \]
+\noindent אזי כל מחלק $m_2$ של $m$, שבשבילו $(m_2,\, m/m_2) = 1$, ניתן להצגה באופן עיקרי ע"י התבנית
+\[ (am_1^{2\nu-1},\, Zm_1^{\nu-1},\, n) \]
+\noindent אשר בוחנה הוא:
+\[ m_1^{2(\nu-1)}D \, , \]
+\noindent במקום שהמספרים $n$ , $Z$ מוגדרים עפ"י הנוסחאות (13)(14)(17), ו-$\nu$ הנו מספר טבעי כלשהו.
+
+\bigskip
+\noindent\textbf{6.} על נקלה נוכל להוכיח גם את התוכן ההפוך מהמשפט האחרון, והוא:
+
+\bigskip
+\noindent\textbf{\underline{משפט 4.}}
+
+\noindent התנאי המספיק לכך שהמספר $m$ יוצג ע"י תבנית $(a,b,c)$ בתנאים האמורים הוא, שאחד המחלקים $m_2$ של $m$,
+\[ (m_2,\, m/m_2) = 1 \]
+\noindent יותך להצגה ע"י התבנית
+\[ (am_1^{2\nu-1},\, Zm_1^{\nu-1},\, n) \]
+\noindent באופן עיקרי.
+
+\noindent ואמנם מתוך השוויון
+\[ am_1^{2\nu-1}q^2 + Zm_1^{\nu-1}qy + ny^2 = m_2 \]
+
+% [original page: 31]
+\noindent בשביל $q$ , $y$ שלמים מסוימים נופק מיד, כי:
+\[ (y,m_1) = 1 \]
+\noindent ולפיכך נוכל תמיד לקבוע מספר $x$ שלם ע"י הקשר:
+\[ x = m_1^{\nu}q + ry \]
+\noindent שבו מתקיים
+\[ (x,y) = 1 \]
+\noindent מאידך גיסא, קל להיווכח, שע"י הצבת ערכו של $q$ מן השוויון האחרון נקבל
+\[ ax^2 + bxy + cy^2 = m \, . \]
+
+\noindent\textbf{7.} כפי שהראינו מצטמצמת המשוואה (1) ע"י ההצבה למשוואה אחרת, שבה מצטמצם האגף הימני למחלק $m_2$ כלשהו של המספר $m$ הקודם, בתנאי
+\[ (m_2,\, m/m_2) = 1 \, . \]
+
+\noindent לפיכך נקרא להצגה (7) בשם הצגה מצומצמת, של התבנית (1) ביחס למחלק $m$.
+
+\noindent כפי שיתברר להלן יש חשיבות רבה להצגה מצומצמת במידה מכסימלית, והיא כאשר אנו בוחרים
+\[ m_1 = m \, ; \]
+\noindent כי אז מובאת המשוואה לידי הצגת המספר 1 ע"י תבנית מסוימת, ודבר זה מקל כבר מצד אחד את עצם פתירת התבנית, ומצד שני הדבר מאפשר את מיון הפתרונות לקבוצות, קבוצות אופייניות בשיטת הקלסיפיקציה החדשה.
+
+\noindent הצגה זאת היא:
+
+\[ \left\{ \begin{aligned} x &= m^{\nu}q + ry \\ m_1 &= m \, , \quad m_2 = 1 \end{aligned} \right. \tag{22} \]
+
+\noindent ע"י הצבה זאת אנו מקבלים את המשוואה הדיופנטית המצומצמת
+\[ am^{2\nu-1}q^2 + Zm^{\nu-1}qy + ny^2 = 1 \, . \tag{23} \]
+
+% === TRANSCRIPTION NOTES ===
+% General note on pages p035-p039 (original pages 27-31): a checkmark-like
+%   glyph appears repeatedly directly above/after "m_1" (and, on original
+%   page 31, above "m"). From context (the surrounding prose explicitly
+%   introduces "nu, some natural number" and later formulas use "nu-1",
+%   "2*nu-1", "2(nu-1)" as exponents on m_1), this glyph has been
+%   interpreted throughout as the Greek letter nu used as an EXPONENT
+%   (m_1^{\nu}, m_1^{2\nu}, m_1^{2\nu-1}, m_1^{\nu-1}, m_1^{2(\nu-1)}).
+%   The typewriter rendering was ambiguous (looked like a check/wedge
+%   mark), so this reading is an interpretation based on mathematical
+%   context rather than a certain OCR match. Flagged for review.
+% Original page 19 (p027): a small wedge/arrow mark preceding a deduction
+%   ("(x,m)=d => x=dx', m=dm'") has been rendered as \Rightarrow; the same
+%   convention was applied to a similar arrow mark on original pages 18
+%   (p026) and 28 (p036).
+% Original page 19 (p027): the divisibility statement transcribed as
+%   "d \mid c" was printed compactly as a stacked "d/c"; read as "d divides c"
+%   per the book's divisibility convention, consistent with the surrounding
+%   proof by contradiction.
+% Original page 20 (p028): section heading transcribed as "כשאחד מהם נתון"
+%   ("when one of them is given") — the scan is slightly smudged at this
+%   spot; "כמאחד" also seemed visible but is not idiomatic, so "כשאחד" was
+%   used as the most plausible reading.
+% Original page 12 (p020): section heading "m = 0" was printed with a
+%   glyph resembling "theta" (likely a typewriter zero with a slash);
+%   transcribed as $m=0$ based on context (section discusses the m=0 case).
+% Original page 31 (p039): a library/ownership stamp ("Bar-Ilan University -
+%   Library for Mathematics and Computer Science") appears at the bottom of
+%   the page and was omitted per instructions to skip library stamps.
+% No content was found to be fully illegible (no [?] markers were needed);
+%   all equation numbers and mathematical content were legible and are
+%   transcribed with high confidence. The main uncertainty is limited to
+%   the connective prose wording in a few places, and to the nu-exponent
+%   interpretation noted above.

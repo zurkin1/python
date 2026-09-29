@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setdefaultlanguage{hebrew}
+\setotherlanguage{english}
+\newfontfamily\hebrewfont{David}
+\setmainfont{Arial}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[margin=2.5cm]{geometry}
+
+% Equation numbers from \tag{N} are normally wrapped in "(" ")" by amsmath.
+% Under RTL bidi those parenthesis characters get mirrored and display
+% backwards. Drop the parentheses and use a leading period instead (the
+% tag sits at the right margin, so the period faces the equation).
+\makeatletter
+\renewcommand{\tagform@}[1]{\maketag@@@{.\ignorespaces#1\unskip\@@italiccorr}}
+\makeatother
+
+\title{}
+\date{}
+
+\begin{document}
+
+% ==================================================================
+% תבניות שניוניות -- אלחנן רובינשטיין -- חלק א'
+% Transcribed from a 1970 Bar-Ilan University scanned manuscript.
+% Assembled from tex_chunks/chunk_A.tex .. chunk_F.tex
+% ==================================================================
+
+\input{tex_chunks/chunk_A}
+
+\input{tex_chunks/chunk_B}
+
+\input{tex_chunks/chunk_C}
+
+\input{tex_chunks/chunk_D}
+
+\input{tex_chunks/chunk_E}
+
+\input{tex_chunks/chunk_F}
+
+\end{document}
