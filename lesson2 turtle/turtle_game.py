@@ -18,6 +18,7 @@ player = turtle.Turtle()
 player.shape("turtle")
 player.color("darkgreen")
 player.shapesize(2) # צב גדול פי 2
+player.speed(0) # קפיצה מיידית בלי אנימציה
 player.penup()
 
 # --- הצב שכותב את הניקוד ---
