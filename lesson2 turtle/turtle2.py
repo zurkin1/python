@@ -6,16 +6,16 @@
 import turtle
 
 screen = turtle.Screen() # המסך (הדף) שעליו הצב מצייר
-screen.bgcolor("lightyellow") # צבע רקע
+screen.bgcolor("lightblue") # צבע רקע
 screen.title("הצב הצבעוני שלי") # הכותרת של החלון
 
 t = turtle.Turtle()
-t.shape("turtle")
-t.speed(3) # מהירות: 1 = איטי, 10 = מהיר, 0 = הכי מהיר שיש
+t.shape("arrow")
+t.speed(1) # מהירות: 1 = איטי, 10 = מהיר, 0 = הכי מהיר שיש
 t.pensize(5) # עובי העט
 
 # --- משולש שכל צלע שלו בצבע אחר ---
-t.color("red") # צבע העט (וגם של הצב)
+t.color("green") # צבע העט (וגם של הצב)
 t.forward(150)
 t.left(120)
 

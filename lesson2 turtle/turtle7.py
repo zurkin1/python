@@ -41,7 +41,15 @@ def toggle_pen():
         t.pendown()
 
 def clear_all():
-    t.clear() # מוחקים את הציור (הצב נשאר במקום)
+    #t.clear() # מוחקים את הציור (הצב נשאר במקום)
+    screen.clear()
+    screen.bgcolor("lightyellow")
+    t = turtle.Turtle()
+    t.shape("turtle")
+    t.color("green")
+    t.pensize(3)
+    t.speed(0)
+    
 
 # מחברים מקשים לפונקציות
 screen.onkey(go_up, "Up")

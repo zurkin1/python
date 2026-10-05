@@ -29,6 +29,8 @@ screen = turtle.Screen()
 t = turtle.Turtle()
 t.speed(0)
 
+time_of_day = 12
+
 # 1. צבע רקע
 # כתבו כאן...
 

@@ -13,25 +13,27 @@ t.speed(0)
 t.pensize(3)
 
 # --- ריבוע בעזרת לולאה ---
-t.color("blue")
-for i in range(4): # חוזרים 4 פעמים
-    t.forward(100) # שורה בתוך הלולאה (מוזחת)
-    t.left(90) # גם היא בתוך הלולאה
+#t.color("blue")
+#for i in range(4): # חוזרים 4 פעמים
+#    t.forward(100) # שורה בתוך הלולאה (מוזחת)
+#    t.left(90) # גם היא בתוך הלולאה
 
 # --- כל מצולע שנרצה! ---
-sides = 6 # מספר הצלעות - נסו לשנות!
+sides = 20 # מספר הצלעות - נסו לשנות!
 length = 70 # אורך כל צלע
 angle = 360 / sides # כלל הזהב: 360 חלקי מספר הצלעות
-
+"""
 t.penup()
-t.goto(-200, 0)
+t.goto(-100, -200)
 t.pendown()
 t.color("green")
 for i in range(sides):
     t.forward(length)
     t.left(angle)
+"""
 
 # --- כוכב ---
+
 t.penup()
 t.goto(150, 50)
 t.pendown()
@@ -39,6 +41,7 @@ t.color("gold")
 for i in range(5):
     t.forward(150)
     t.right(144) # הסוד של הכוכב: 144 מעלות
+
 
 turtle.done()
 

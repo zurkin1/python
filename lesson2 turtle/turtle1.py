@@ -11,14 +11,13 @@ t = turtle.Turtle() # יוצרים צב חדש בשם t
 t.shape("turtle") # שהצב ייראה כמו צב אמיתי ולא כמו חץ
 
 # --- ציור ריבוע, צעד אחר צעד ---
-t.forward(100) # קדימה 100 צעדים (פיקסלים)
-t.left(90) # פונים שמאלה 90 מעלות
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
-t.forward(100)
-t.left(90)
+t.forward(150)
+t.left(120)
+t.forward(150)
+t.left(120)
+t.forward(150)
+t.left(120)
+
 
 turtle.done() # משאירים את החלון פתוח בסוף - תמיד בשורה האחרונה!
 
