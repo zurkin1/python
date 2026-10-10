@@ -1,8 +1,8 @@
 import turtle
 import random
-from google import genai
+#from google import genai
 
-client = genai.Client(api_key="AIzaSyDN8FNkomfKJyzNVDmocknDqaBfVaz1Ymg")
+#client = genai.Client(api_key="AIzaSyDN8FNkomfKJyzNVDmocknDqaBfVaz1Ymg")
 
 sc = turtle.Screen()
 sc.bgcolor('beige')
@@ -169,9 +169,7 @@ def eat():
     eating_stage = eating_stage + 1
     tongue.clear()
 
-word = client.models.generate_content(
-    model="gemini-3.6-flash", contents="suggest one word for hanged man game, write only the word itself with small letters"
-)
+word = "test" #client.models.generate_content(gemini-3.6-flash", contents="suggest one word for hanged man game, write only the word itself with small letters")
 hanging_stage = 0
 right_answers = 0
 # the question
