@@ -14,22 +14,14 @@ screen.title("Car Race!")
 screen.tracer(0)
 
 LANES = [-120, 0, 120] # רשימה: מיקום x של כל נתיב
+ENEMIES = ["enemy_blue.gif", "enemy_yellow.gif", "enemy_purple.gif", "enemy_orange.gif", "enemy_pink.gif"]
 
 # ---------------------------------------------------
-# צורת מכונית - קוד מוכן, לא חייבים להבין אותו 🙂
+# תמונות המכוניות - קבצי gif שנמצאים באותה תיקייה עם הקוד
 # ---------------------------------------------------
-def car_shape(color):
-    name = "car_" + color
-    if name not in screen.getshapes():
-        car = turtle.Shape("compound")
-        for x in [-23, 17]: # גלגלים
-            for y in [-26, 14]:
-                car.addcomponent(((x, y), (x + 6, y), (x + 6, y + 12), (x, y + 12)), "black")
-        car.addcomponent(((-18, -32), (18, -32), (18, 32), (-18, 32)), color, "black") # גוף
-        car.addcomponent(((-14, 6), (14, 6), (11, 18), (-11, 18)), "lightblue", "black") # שמשה קדמית
-        car.addcomponent(((-13, -24), (13, -24), (11, -16), (-11, -16)), "lightblue", "black") # שמשה אחורית
-        screen.register_shape(name, car)
-    return name
+screen.register_shape("player.gif") # המכונית שלנו (פונה למעלה)
+for image in ENEMIES: # המכוניות שבאות מולנו (פונות למטה)
+    screen.register_shape(image)
 
 # ---------------------------------------------------
 # פונקציות ציור
@@ -54,11 +46,10 @@ def draw_road():
     draw_rect(-186, -350, 6, 700, "white") # שוליים משמאל
     draw_rect(180, -350, 6, 700, "white") # שוליים מימין
 
-def make_car(color, x, y, heading):
+def make_car(image, x, y):
     car = turtle.Turtle()
-    car.shape(car_shape(color))
+    car.shape(image) # התמונה היא הצורה של הצב
     car.penup()
-    car.setheading(heading) # 90 = למעלה, 270 = למטה
     car.goto(x, y)
     return car
 
@@ -81,7 +72,7 @@ for x in [-60, 60]:
 # ---------------------------------------------------
 draw_road()
 lane = 1 # האינדקס של הנתיב ברשימה LANES (0, 1 או 2)
-player = make_car("red", LANES[lane], -250, 90)
+player = make_car("player.gif", LANES[lane], -250)
 
 def move_left():
     global lane # כדי לשנות משתנה שנמצא מחוץ לפונקציה

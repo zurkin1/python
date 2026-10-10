@@ -16,23 +16,14 @@ screen.title("Car Race!")
 screen.tracer(0) # מכבים ציור אוטומטי - אנחנו נעדכן את המסך בעצמנו
 
 LANES = [-120, 0, 120] # רשימה: מיקום x של כל נתיב
-COLORS = ["red", "blue", "yellow", "purple", "orange", "pink"]
+ENEMIES = ["enemy_blue.gif", "enemy_yellow.gif", "enemy_purple.gif", "enemy_orange.gif", "enemy_pink.gif"]
 
 # ---------------------------------------------------
-# צורת מכונית - קוד מוכן, לא חייבים להבין אותו 🙂
+# תמונות המכוניות - קבצי gif שנמצאים באותה תיקייה עם הקוד
 # ---------------------------------------------------
-def car_shape(color):
-    name = "car_" + color
-    if name not in screen.getshapes():
-        car = turtle.Shape("compound")
-        for x in [-23, 17]: # גלגלים
-            for y in [-26, 14]:
-                car.addcomponent(((x, y), (x + 6, y), (x + 6, y + 12), (x, y + 12)), "black")
-        car.addcomponent(((-18, -32), (18, -32), (18, 32), (-18, 32)), color, "black") # גוף
-        car.addcomponent(((-14, 6), (14, 6), (11, 18), (-11, 18)), "lightblue", "black") # שמשה קדמית
-        car.addcomponent(((-13, -24), (13, -24), (11, -16), (-11, -16)), "lightblue", "black") # שמשה אחורית
-        screen.register_shape(name, car)
-    return name
+screen.register_shape("player.gif") # המכונית שלנו (פונה למעלה)
+for image in ENEMIES: # המכוניות שבאות מולנו (פונות למטה)
+    screen.register_shape(image)
 
 # ---------------------------------------------------
 # פונקציות ציור
@@ -57,11 +48,10 @@ def draw_road():
     draw_rect(-186, -350, 6, 700, "white") # שוליים משמאל
     draw_rect(180, -350, 6, 700, "white") # שוליים מימין
 
-def make_car(color, x, y, heading):
+def make_car(image, x, y):
     car = turtle.Turtle()
-    car.shape(car_shape(color))
+    car.shape(image) # התמונה היא הצורה של הצב
     car.penup()
-    car.setheading(heading) # 90 = למעלה, 270 = למטה
     car.goto(x, y)
     return car # מחזירים את המכונית החדשה
 
@@ -90,7 +80,7 @@ def move_lines():
 # ---------------------------------------------------
 draw_road()
 lane = 1 # האינדקס של הנתיב ברשימה LANES (0, 1 או 2)
-player = make_car("red", LANES[lane], -250, 90)
+player = make_car("player.gif", LANES[lane], -250)
 
 def move_left():
     global lane
@@ -110,13 +100,13 @@ def move_right():
 GAP = 300 # מרחק בין מכונית למכונית
 enemies = []
 for i in range(3):
-    enemy = make_car(random.choice(COLORS), random.choice(LANES), 450 + i * GAP, 270)
+    enemy = make_car(random.choice(ENEMIES), random.choice(LANES), 450 + i * GAP)
     enemies.append(enemy)
 
 def reset_enemy(enemy):
     enemy.sety(enemy.ycor() + len(enemies) * GAP) # חוזרת למעלה, אחרי כל האחרות
     enemy.setx(random.choice(LANES))
-    enemy.shape(car_shape(random.choice(COLORS)))
+    enemy.shape(random.choice(ENEMIES))
 
 def crashed(car1, car2): # מחזירה True אם המכוניות נוגעות
     close_x = abs(car1.xcor() - car2.xcor()) < 36
@@ -178,7 +168,7 @@ turtle.done()
 # 🏆 אתגרים:
 # ===================================================
 # 1. שנו את מספר המכוניות ל-4 (בלולאה range). מה קורה?
-# 2. הוסיפו צבעים חדשים לרשימה COLORS.
+# 2. ציירו מכונית משלכם בצייר (gif, בערך 40x70), הוסיפו אותה לרשימה ENEMIES.
 # 3. הוסיפו נתיב רביעי לרשימה LANES (רמז: צריך גם כביש רחב יותר).
 # 4. בונוס: הוסיפו 3 "חיים" - כל התנגשות מורידה חיים, ורק ב-0 המשחק נגמר.
 #    (רמז: אחרי התנגשות - reset_enemy(enemy) כדי שהמכונית תיעלם)
