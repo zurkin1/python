@@ -105,7 +105,6 @@ def move_enemy():
     if enemy.ycor() < -400:
         enemy.sety(450)
         enemy.setx(random.choice(LANES))
-        enemy.shape(random.choice(ENEMIES))
 
 # ---------------------------------------------------
 # זיהוי התנגשות - חדש! 🆕

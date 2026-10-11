@@ -90,7 +90,6 @@ def move_right():
 
 screen.listen() # המסך "מקשיב" למקלדת
 screen.onkey(move_left, "Left") # חץ שמאלה -> move_left
-screen.onkey(move_right, "Right") # חץ ימינה -> move_right
 
 screen.update()
 turtle.done()

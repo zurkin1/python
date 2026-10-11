@@ -16,14 +16,11 @@ screen.title("Car Race!")
 screen.tracer(0)
 
 LANES = [-120, 0, 120] # רשימה: מיקום x של כל נתיב
-ENEMIES = ["enemy_blue.gif", "enemy_yellow.gif", "enemy_purple.gif", "enemy_orange.gif", "enemy_pink.gif"]
 
 # ---------------------------------------------------
 # תמונות המכוניות - קבצי gif שנמצאים באותה תיקייה עם הקוד
 # ---------------------------------------------------
 screen.register_shape("player.gif") # המכונית שלנו (פונה למעלה)
-for image in ENEMIES: # המכוניות שבאות מולנו (פונות למטה)
-    screen.register_shape(image)
 
 # ---------------------------------------------------
 # פונקציות ציור
@@ -73,7 +70,7 @@ speed = 6 # כמה צעדים זזים בכל "תמונה"
 
 def move_lines(): # חדש! 🆕
     for line in lines: # עוברים על כל הקווים ברשימה
-        line.sety(line.ycor() - speed)
+        line.sety(line.ycor() + speed)
         if line.ycor() < -360:
             line.sety(line.ycor() + 720) # חוזר למעלה
 
@@ -96,23 +93,12 @@ def move_right():
         lane = lane + 1
         player.setx(LANES[lane])
 
-# ---------------------------------------------------
-# מכונית שבאה מולנו - חדש! 🆕
-# ---------------------------------------------------
-enemy = make_car("enemy_blue.gif", random.choice(LANES), 450)
-
-def move_enemy():
-    enemy.sety(enemy.ycor() - speed)
-    if enemy.ycor() < -400: # יצאה מהמסך למטה
-        enemy.sety(450) # חוזרת למעלה
-        enemy.setx(random.choice(LANES)) # בנתיב אקראי
 
 # ---------------------------------------------------
 # לולאת המשחק - חדש! 🆕
 # ---------------------------------------------------
 def game_loop():
     move_lines()
-    move_enemy()
     screen.update() # מציירים את המסך מחדש
     screen.ontimer(game_loop, 20) # עוד 20 אלפיות שנייה - שוב!
 
@@ -122,12 +108,3 @@ screen.onkey(move_right, "Right")
 
 game_loop() # מתניעים! 🏁
 turtle.done()
-
-# ===================================================
-# 🏆 אתגרים:
-# ===================================================
-# 1. שנו את speed ל-12. ול-2. מה ההבדל?
-# 2. שנו את 20 ב-ontimer ל-100. מה קרה לתנועה? למה?
-# 3. כל פעם שהמכונית חוזרת למעלה - תנו לה צבע אקראי:
-#    enemy.shape(random.choice(ENEMIES))
-# 4. בונוס: הוסיפו מכונית שנייה, enemy2, שמתחילה ב-y = 750.
