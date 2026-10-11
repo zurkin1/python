@@ -6,8 +6,13 @@
 import turtle
 
 screen = turtle.Screen()
-screen.bgcolor("skyblue")
+time_of_day = 13
 
+if time_of_day <= 12:
+    screen.bgcolor("lightblue")
+else:
+    screen.bgcolor("black")
+    
 t = turtle.Turtle()
 t.speed(5)
 t.pensize(3)

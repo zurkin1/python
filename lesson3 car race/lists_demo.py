@@ -12,6 +12,7 @@ print(colors) # כל הרשימה
 print(colors[0]) # האיבר הראשון - האינדקס מתחיל מ-0!
 print(colors[-1]) # האיבר האחרון
 print(len(colors)) # כמה איברים יש ברשימה
+print(colors[4])
 
 colors.append("purple") # מוסיפים איבר לסוף הרשימה
 colors[1] = "pink" # מחליפים איבר

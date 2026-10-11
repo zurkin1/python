@@ -14,15 +14,12 @@ screen.title("Car Race!")
 screen.tracer(0) # מכבים ציור אוטומטי - הציור יופיע בבת אחת עם screen.update()
 
 LANES = [-120, 0, 120] # רשימה: מיקום x של כל נתיב
-ENEMIES = ["enemy_blue.gif", "enemy_yellow.gif", "enemy_purple.gif", "enemy_orange.gif", "enemy_pink.gif"]
 
 # ---------------------------------------------------
 # תמונות המכוניות - קבצי gif שנמצאים באותה תיקייה עם הקוד
 # screen.register_shape adds a new shape to turtle’s list of shapes that turtles can wear.
 # ---------------------------------------------------
 screen.register_shape("player.gif") # המכונית שלנו (פונה למעלה)
-for image in ENEMIES: # המכוניות שבאות מולנו (פונות למטה)
-    screen.register_shape(image)
 
 # ---------------------------------------------------
 # פונקציות ציור

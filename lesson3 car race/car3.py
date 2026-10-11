@@ -66,11 +66,11 @@ for x in [-60, 60]:
         line.goto(x, y)
         lines.append(line)
 
-speed = 6 # כמה צעדים זזים בכל "תמונה"
+speed = 20 # כמה צעדים זזים בכל "תמונה"
 
 def move_lines(): # חדש! 🆕
     for line in lines: # עוברים על כל הקווים ברשימה
-        line.sety(line.ycor() + speed)
+        line.sety(line.ycor() - speed)
         if line.ycor() < -360:
             line.sety(line.ycor() + 720) # חוזר למעלה
 

@@ -36,10 +36,23 @@ def area(width, height):
     result = width * height # result = משתנה מקומי, קיים רק בתוך הפונקציה
     return result
 
+def draw_sun(x, y, size):
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
+    t.color("yellow")
+    t.begin_fill()
+    t.circle(size)
+    t.end_fill()
+
+
 # --- התוכנית הראשית: קריאות לפונקציות ---
 draw_house(-250, -50, "khaki")
 draw_house(-100, -50, "lightblue")
 draw_house(50, -50, "pink")
+draw_house(150, -50, "yellow")
+
+draw_sun(200, 200, 50)
 
 t.hideturtle()
 turtle.done()
