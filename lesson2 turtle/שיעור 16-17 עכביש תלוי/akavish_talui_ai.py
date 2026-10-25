@@ -2,7 +2,7 @@ import turtle
 import random
 #from google import genai
 
-#client = genai.Client(api_key="AIzaSyDN8FNkomfKJyzNVDmocknDqaBfVaz1Ymg")
+#client = genai.Client(api_key="*************************")
 
 sc = turtle.Screen()
 sc.bgcolor('beige')
