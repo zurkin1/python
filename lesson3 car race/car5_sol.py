@@ -148,11 +148,13 @@ def game_loop():
 
     screen.update() # מציירים את המסך מחדש
     if game_over:
+        score = 0
         writer.goto(0, 20)
         writer.write("CRASH!", align="center", font=("Arial", 40, "bold"))
         writer.goto(0, -20)
         writer.write("Score: " + str(score), align="center", font=("Arial", 24, "bold"))
         screen.update()
+        screen.ontimer(game_loop, 10000)
     else:
         screen.ontimer(game_loop, 20) # עוד 20 אלפיות שנייה - שוב!
 

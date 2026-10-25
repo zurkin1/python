@@ -10,7 +10,7 @@ import random
 from google import genai
 
 
-API_KEY = "PUT-YOUR-API-KEY-HERE" # המפתח שקיבלתם מהמורה
+API_KEY = "" # המפתח שקיבלתם מהמורה
 MODEL = "gemini-3.6-flash"
 client = genai.Client(api_key=API_KEY)
 

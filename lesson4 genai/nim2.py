@@ -21,7 +21,7 @@ def player_turn(name): # התור של שחקן אנושי
     print("Tokens left: " + str(pile))
     count = int(input(name + ", how many tokens do you take? "))
     if not legal_move(count): # חדש! 🆕 בודקים את המהלך
-        print("Illegal move! You take 1 token.")
+        print("Illegal move! You took 1 token.")
         count = 1
     pile = pile - count
     if pile == 0: # חדש! 🆕 סוף המשחק
